@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\BinaryTree.cs" />
+    <Compile Include="Model\Node.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,7 +79,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,5 +17,10 @@ namespace CapstoneProject
             LoadData();
             InitializeComponent();
         }
+
+        private void LoadData()
+        {
+
+        }
     }
 }

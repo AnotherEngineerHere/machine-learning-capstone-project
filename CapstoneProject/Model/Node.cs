@@ -8,5 +8,6 @@ namespace CapstoneProject.Model
 {
     class Node
     {
+        
     }
 }
