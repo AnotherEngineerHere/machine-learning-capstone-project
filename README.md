@@ -15,7 +15,10 @@ The project will be done in C# Programming Language
 The Operative System will be  Windows 10
 
 The Development Environment will be Visual Studio
-
-
+## How to open
+Import a project in Visual Studio 2019
+Just click on run and work
+Visual Studio 2019 is required
+Link: https://visualstudio.microsoft.com/es/vs/
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
