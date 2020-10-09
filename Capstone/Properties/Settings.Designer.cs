@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapstoneProject.Properties
+namespace Capstone.Properties
 {
 
 

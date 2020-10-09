@@ -1,9 +1,0 @@
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\bin\Debug\CapstoneProject.exe.config
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\bin\Debug\CapstoneProject.exe
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\bin\Debug\CapstoneProject.pdb
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\obj\Debug\CapstoneProject.csprojAssemblyReference.cache
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\obj\Debug\CapstoneProject.Properties.Resources.resources
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\obj\Debug\CapstoneProject.csproj.GenerateResource.cache
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\obj\Debug\CapstoneProject.csproj.CoreCompileInputs.cache
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\obj\Debug\CapstoneProject.exe
-D:\Documentos\C#\CapstoneProject\CapstoneProject\CapstoneProject\obj\Debug\CapstoneProject.pdb
