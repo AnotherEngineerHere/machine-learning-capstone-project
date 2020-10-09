@@ -18,6 +18,7 @@ C:\Users\Camilo\Documents\Capstone\Capstone\obj\Debug\Capstone.csproj.GenerateRe
 C:\Users\Camilo\Documents\Capstone\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
 C:\Users\Camilo\Documents\Capstone\Capstone\obj\Debug\Capstone.exe
 C:\Users\Camilo\Documents\Capstone\Capstone\obj\Debug\Capstone.pdb
+<<<<<<< HEAD
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\bin\Debug\Capstone.exe.config
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\bin\Debug\Capstone.exe
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\bin\Debug\Capstone.pdb
@@ -29,3 +30,12 @@ C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\ob
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\obj\Debug\Capstone.exe
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\obj\Debug\Capstone.pdb
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\obj\Debug\Capstone.GUI.Graficos.resources
+=======
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\DesicionTree_CapstoneProject.Principal.resources
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.Properties.Resources.resources
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.exe
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.pdb
+>>>>>>> master
