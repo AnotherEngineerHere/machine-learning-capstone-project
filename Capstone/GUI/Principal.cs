@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capstone.GUI;
 using CapstoneProject.model;
 
 namespace DesicionTree_CapstoneProject
@@ -82,6 +83,7 @@ namespace DesicionTree_CapstoneProject
             butAll.Visible = true;
             labCategories.Visible = true;
             CategoriesCB.Visible = true;
+            butGraf.Visible = true;
           
         }
 
@@ -309,6 +311,11 @@ namespace DesicionTree_CapstoneProject
             }
         }
 
-       
+        private void butGraf_Click(object sender, EventArgs e)
+        {
+            Graficos c = new Graficos(lc.Cars);
+            c.Show();
+
+        }
     }
 }

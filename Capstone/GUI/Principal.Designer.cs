@@ -43,6 +43,7 @@
             this.labMax = new System.Windows.Forms.Label();
             this.textMax = new System.Windows.Forms.TextBox();
             this.textSearch = new System.Windows.Forms.TextBox();
+            this.butGraf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,12 +202,24 @@
             this.textSearch.TabIndex = 14;
             this.textSearch.Visible = false;
             // 
+            // butGraf
+            // 
+            this.butGraf.Location = new System.Drawing.Point(266, 480);
+            this.butGraf.Name = "butGraf";
+            this.butGraf.Size = new System.Drawing.Size(103, 34);
+            this.butGraf.TabIndex = 15;
+            this.butGraf.Text = "Graphics";
+            this.butGraf.UseVisualStyleBackColor = true;
+            this.butGraf.Visible = false;
+            this.butGraf.Click += new System.EventHandler(this.butGraf_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(1088, 542);
+            this.Controls.Add(this.butGraf);
             this.Controls.Add(this.textSearch);
             this.Controls.Add(this.textMax);
             this.Controls.Add(this.labMax);
@@ -247,6 +260,7 @@
         private System.Windows.Forms.Label labMax;
         private System.Windows.Forms.TextBox textMax;
         private System.Windows.Forms.TextBox textSearch;
+        private System.Windows.Forms.Button butGraf;
     }
 }
 
