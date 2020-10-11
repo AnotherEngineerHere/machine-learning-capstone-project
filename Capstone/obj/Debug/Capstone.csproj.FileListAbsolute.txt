@@ -39,3 +39,4 @@ D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.csp
 D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.exe
 D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.pdb
 >>>>>>> master
+D:\Documentos\C#\CapstoneProject\CapstoneProject\Capstone\obj\Debug\Capstone.GUI.Graficos.resources

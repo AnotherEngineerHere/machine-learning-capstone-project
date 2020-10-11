@@ -81,7 +81,7 @@
             this.precioMaximo.Name = "precioMaximo";
             this.precioMaximo.Size = new System.Drawing.Size(106, 23);
             this.precioMaximo.TabIndex = 2;
-            this.precioMaximo.Text = "Caros Marca";
+            this.precioMaximo.Text = "Carros Marca";
             this.precioMaximo.UseVisualStyleBackColor = true;
             this.precioMaximo.Click += new System.EventHandler(this.precioMaximo_Click);
             // 
@@ -91,7 +91,7 @@
             this.buttonPorCaros.Name = "buttonPorCaros";
             this.buttonPorCaros.Size = new System.Drawing.Size(106, 23);
             this.buttonPorCaros.TabIndex = 3;
-            this.buttonPorCaros.Text = "Porcentaje Caros";
+            this.buttonPorCaros.Text = "Porcentaje Carros";
             this.buttonPorCaros.UseVisualStyleBackColor = true;
             this.buttonPorCaros.Click += new System.EventHandler(this.buttonPorCaros_Click);
             // 

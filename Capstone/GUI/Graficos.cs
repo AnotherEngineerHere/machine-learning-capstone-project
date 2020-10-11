@@ -87,7 +87,6 @@ namespace Capstone.GUI
             noShow();
             string[] brands = { "dos", "tres", "cuatro", "cinco"};
             int[] brandsC = { 432,432,432,432 };
-            puertas.Series.Add("puertas");
             puertas.Series["puertas"].Points.Clear();
             for (int i = 0; i < brands.Length; i++)
             {
