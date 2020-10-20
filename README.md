@@ -16,12 +16,8 @@ The Operative System will be  Windows 10
 
 The Development Environment will be Visual Studio
 
-<<<<<<< HEAD
-=======
 ## DataSet Source
 http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
-
->>>>>>> master
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
