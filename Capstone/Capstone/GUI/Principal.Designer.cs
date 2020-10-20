@@ -109,7 +109,7 @@ namespace DesicionTree_CapstoneProject
             this.labCategories.Name = "labCategories";
             this.labCategories.Size = new System.Drawing.Size(74, 16);
             this.labCategories.TabIndex = 5;
-            this.labCategories.Text = "Categorias";
+            this.labCategories.Text = "Categories";
             this.labCategories.Visible = false;
             // 
             // ComboMultiple
@@ -129,9 +129,9 @@ namespace DesicionTree_CapstoneProject
             this.labFilter.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labFilter.Location = new System.Drawing.Point(759, 133);
             this.labFilter.Name = "labFilter";
-            this.labFilter.Size = new System.Drawing.Size(148, 16);
+            this.labFilter.Size = new System.Drawing.Size(129, 16);
             this.labFilter.TabIndex = 7;
-            this.labFilter.Text = "Filtro/Busqueda/Rango";
+            this.labFilter.Text = "Filter/Search/Range";
             this.labFilter.Visible = false;
             // 
             // butAcceptar
@@ -140,7 +140,7 @@ namespace DesicionTree_CapstoneProject
             this.butAcceptar.Name = "butAcceptar";
             this.butAcceptar.Size = new System.Drawing.Size(86, 26);
             this.butAcceptar.TabIndex = 8;
-            this.butAcceptar.Text = "Aceptar";
+            this.butAcceptar.Text = "Ok";
             this.butAcceptar.UseVisualStyleBackColor = true;
             this.butAcceptar.Visible = false;
             this.butAcceptar.Click += new System.EventHandler(this.butAcceptar_Click);
@@ -198,7 +198,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // textSearch
             // 
-            this.textSearch.Location = new System.Drawing.Point(762, 163);
+            this.textSearch.Location = new System.Drawing.Point(762, 164);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(206, 20);
             this.textSearch.TabIndex = 14;
@@ -219,7 +219,7 @@ namespace DesicionTree_CapstoneProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(1088, 542);
             this.Controls.Add(this.butGraf);
             this.Controls.Add(this.textSearch);
