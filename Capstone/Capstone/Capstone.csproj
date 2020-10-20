@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decision_Tree\TreeNode.cs" />
     <Compile Include="GUI\Graficos.cs">
       <SubType>Form</SubType>
     </Compile>
