@@ -34,8 +34,12 @@ namespace Capstone.GUI
         {
             DataTable data = csv.ImportFromCsvFile(path);
             tree.Root = tree.Learn(data, "");
-            textTree.Text = "Algo " + tree.Root.Name;
-            Console.WriteLine("Soy la root " +tree.Root.Name);
+          
+            tree.Print(tree.Root, tree.Root.Name.ToUpper());
+            string tr = tree.Visual;
+            textTree.Text = tr;
+
+
         }
       
     }

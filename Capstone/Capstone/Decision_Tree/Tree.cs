@@ -11,48 +11,40 @@ namespace Capstone.Decision_Tree
     {
 
         public TreeNode Root { get; set; }
-        public void Print(TreeNode node, string result)
+
+        public string Visual { get; set; }
+
+        public string Print(TreeNode node, string result)
         {
+            string print = "";
+            string s = "";
             if (node?.ChildNodes == null || node.ChildNodes.Count == 0)
             {
                 var seperatedResult = result.Split(' ');
-
                 foreach (var item in seperatedResult)
                 {
-                    if (item.Equals(seperatedResult[0]))
-                    {
-                        Console.ForegroundColor = ConsoleColor.Magenta;
-                    }
-                    else if (item.Equals("--") || item.Equals("-->"))
-                    {
-                        // empty if but better than checking at .ToUpper() and .ToLower() if
-                    }
-                    else if (item.Equals("YES") || item.Equals("NO"))
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                    }
-                    else if (item.ToUpper().Equals(item))
-                    {
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                    }
-
-                    Console.Write($"{item} ");
-                    Console.ResetColor();
+                    print += item;
+                    
                 }
-
-                Console.WriteLine();
-
-                return;
+                saveStatus(print);
+                return print;
             }
-
             foreach (var child in node.ChildNodes)
             {
                 Print(child, result + " -- " + child.Edge.ToLower() + " --> " + child.Name.ToUpper());
             }
+
+            s = print;
+            
+            return s;
+            
+        }
+
+        public void saveStatus(string status) {
+
+            string tr = "\r\n";
+            tr += status;
+            Visual +=  tr;
         }
 
         public string CalculateResult(TreeNode root, IDictionary<string, string> valuesForQuery, string result)
