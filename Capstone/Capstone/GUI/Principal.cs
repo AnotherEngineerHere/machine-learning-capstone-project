@@ -16,7 +16,7 @@ namespace DesicionTree_CapstoneProject
 {
     public partial class Principal : Form
     {
-        public const string PATH = @"../../Data/car.csv";
+        public const string PATH = @"../../Data/most.csv";
 
         ListCars lc;
 
@@ -44,19 +44,19 @@ namespace DesicionTree_CapstoneProject
             string title = "Cars Data";
             ds = new DataSet();
             ds.Tables.Add(title);
-            ds.Tables[title].Columns.Add("MARCA");
             ds.Tables[title].Columns.Add("P_VENTA");
             ds.Tables[title].Columns.Add("P_MANTENIMIENTO");
             ds.Tables[title].Columns.Add("N_PUERTAS");
             ds.Tables[title].Columns.Add("N_OCUPANTES");
             ds.Tables[title].Columns.Add("TAM_RETENEDOR");
             ds.Tables[title].Columns.Add("NIVEL_SEG");
-            
+            ds.Tables[title].Columns.Add("CARFET");
+
             string[] lineas = File.ReadAllLines(PATH);
 
             for (int i = 0; i < lineas.Length; i++)
             {
-                string[] celdas = lineas[i].Split(',');
+                string[] celdas = lineas[i].Split(';');
 
                 string _brand = celdas[0];
                 string _sold_Price = celdas[1];
@@ -320,7 +320,8 @@ namespace DesicionTree_CapstoneProject
 
         private void butTree_Click(object sender, EventArgs e)
         {
-            ID3 id3 = new ID3();
+            
+            ID3 id3 = new ID3(PATH);
             id3.Show();
         }
     }

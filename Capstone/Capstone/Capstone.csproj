@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Decision_Tree\Attribute.cs" />
+    <Compile Include="GUI\CSVFileHandler.cs" />
     <Compile Include="Decision_Tree\Tree.cs" />
     <Compile Include="Decision_Tree\TreeNode.cs" />
     <Compile Include="GUI\Graphics.cs">
@@ -94,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ID3.resx">
+      <DependentUpon>ID3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
