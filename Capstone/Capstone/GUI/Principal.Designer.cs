@@ -30,6 +30,7 @@ namespace DesicionTree_CapstoneProject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.label1 = new System.Windows.Forms.Label();
             this.labWelcome = new System.Windows.Forms.Label();
             this.butLoad = new System.Windows.Forms.Button();
@@ -63,11 +64,11 @@ namespace DesicionTree_CapstoneProject
             this.labWelcome.AutoSize = true;
             this.labWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labWelcome.Location = new System.Drawing.Point(44, 41);
+            this.labWelcome.Location = new System.Drawing.Point(34, 37);
             this.labWelcome.Name = "labWelcome";
-            this.labWelcome.Size = new System.Drawing.Size(91, 24);
+            this.labWelcome.Size = new System.Drawing.Size(347, 24);
             this.labWelcome.TabIndex = 1;
-            this.labWelcome.Text = "Welcome";
+            this.labWelcome.Text = "Welcome to the ID3 managemet system!";
             // 
             // butLoad
             // 
@@ -83,11 +84,12 @@ namespace DesicionTree_CapstoneProject
             // 
             this.dataCar.AllowUserToAddRows = false;
             this.dataCar.AllowUserToDeleteRows = false;
+            this.dataCar.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataCar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCar.Location = new System.Drawing.Point(38, 68);
+            this.dataCar.Location = new System.Drawing.Point(27, 68);
             this.dataCar.Name = "dataCar";
             this.dataCar.ReadOnly = true;
-            this.dataCar.Size = new System.Drawing.Size(690, 406);
+            this.dataCar.Size = new System.Drawing.Size(670, 390);
             this.dataCar.TabIndex = 3;
             // 
             // CategoriesCB
@@ -231,8 +233,10 @@ namespace DesicionTree_CapstoneProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(1088, 542);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1061, 542);
             this.Controls.Add(this.butTree);
             this.Controls.Add(this.butGraf);
             this.Controls.Add(this.textSearch);
@@ -250,6 +254,7 @@ namespace DesicionTree_CapstoneProject
             this.Controls.Add(this.butLoad);
             this.Controls.Add(this.labWelcome);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.Text = "Principal";
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).EndInit();

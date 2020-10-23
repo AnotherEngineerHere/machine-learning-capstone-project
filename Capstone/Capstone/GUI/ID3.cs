@@ -38,7 +38,7 @@ namespace Capstone.GUI
             tree.Print(tree.Root, tree.Root.Name.ToUpper());
             string tr = tree.Visual;
             textTree.Text = tr;
-
+            textTree.ReadOnly = true;
 
         }
       
