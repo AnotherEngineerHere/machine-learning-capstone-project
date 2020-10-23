@@ -43,8 +43,6 @@ C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Ca
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Ical.Net.pdb
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Ical.Net.xml
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\NodaTime.xml
-C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
-C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Graficos.resources
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\DesicionTree_CapstoneProject.Principal.resources
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.Properties.Resources.resources
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
@@ -52,3 +50,4 @@ C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Ca
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CopyComplete
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.exe
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.pdb
+C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Graphics.resources

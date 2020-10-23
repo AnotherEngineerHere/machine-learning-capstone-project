@@ -84,7 +84,7 @@ namespace DesicionTree_CapstoneProject
             labCategories.Visible = true;
             CategoriesCB.Visible = true;
             butGraf.Visible = true;
-          
+            butTree.Visible = true;
         }
 
         private void Fill_Table(List<Car> list)
@@ -313,9 +313,15 @@ namespace DesicionTree_CapstoneProject
 
         private void butGraf_Click(object sender, EventArgs e)
         {
-            Graficos c = new Graficos(lc.Cars);
+            Capstone.GUI.Graphics c = new Capstone.GUI.Graphics(lc.Cars);
             c.Show();
 
+        }
+
+        private void butTree_Click(object sender, EventArgs e)
+        {
+            ID3 id3 = new ID3();
+            id3.Show();
         }
     }
 }

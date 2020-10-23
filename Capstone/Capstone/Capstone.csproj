@@ -70,11 +70,17 @@
     <Compile Include="Decision_Tree\Attribute.cs" />
     <Compile Include="Decision_Tree\Tree.cs" />
     <Compile Include="Decision_Tree\TreeNode.cs" />
-    <Compile Include="GUI\Graficos.cs">
+    <Compile Include="GUI\Graphics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Graficos.Designer.cs">
-      <DependentUpon>Graficos.cs</DependentUpon>
+    <Compile Include="GUI\Graphics.Designer.cs">
+      <DependentUpon>Graphics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ID3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ID3.Designer.cs">
+      <DependentUpon>ID3.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Principal.cs">
       <SubType>Form</SubType>
@@ -86,8 +92,8 @@
     <Compile Include="Model\Car.cs" />
     <Compile Include="Model\ListCars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Graficos.resx">
-      <DependentUpon>Graficos.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Graphics.resx">
+      <DependentUpon>Graphics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

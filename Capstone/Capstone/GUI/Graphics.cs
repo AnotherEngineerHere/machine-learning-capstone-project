@@ -12,11 +12,11 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Capstone.GUI
 {
-    public partial class Graficos : Form
+    public partial class Graphics : Form
     {
         List<Car> cars;
         int cantidadMax;
-        public Graficos(List<Car> c)
+        public Graphics(List<Car> c)
         {
             InitializeComponent();
             this.cars = c;

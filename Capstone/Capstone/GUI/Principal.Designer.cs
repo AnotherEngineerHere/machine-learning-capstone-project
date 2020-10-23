@@ -46,6 +46,7 @@ namespace DesicionTree_CapstoneProject
             this.textMax = new System.Windows.Forms.TextBox();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.butGraf = new System.Windows.Forms.Button();
+            this.butTree = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@ namespace DesicionTree_CapstoneProject
             this.dataCar.AllowUserToAddRows = false;
             this.dataCar.AllowUserToDeleteRows = false;
             this.dataCar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCar.Location = new System.Drawing.Point(48, 68);
+            this.dataCar.Location = new System.Drawing.Point(38, 68);
             this.dataCar.Name = "dataCar";
             this.dataCar.ReadOnly = true;
             this.dataCar.Size = new System.Drawing.Size(690, 406);
@@ -215,12 +216,24 @@ namespace DesicionTree_CapstoneProject
             this.butGraf.Visible = false;
             this.butGraf.Click += new System.EventHandler(this.butGraf_Click);
             // 
+            // butTree
+            // 
+            this.butTree.Location = new System.Drawing.Point(375, 480);
+            this.butTree.Name = "butTree";
+            this.butTree.Size = new System.Drawing.Size(103, 34);
+            this.butTree.TabIndex = 16;
+            this.butTree.Text = "ID3";
+            this.butTree.UseVisualStyleBackColor = true;
+            this.butTree.Visible = false;
+            this.butTree.Click += new System.EventHandler(this.butTree_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(1088, 542);
+            this.Controls.Add(this.butTree);
             this.Controls.Add(this.butGraf);
             this.Controls.Add(this.textSearch);
             this.Controls.Add(this.textMax);
@@ -263,6 +276,7 @@ namespace DesicionTree_CapstoneProject
         private System.Windows.Forms.TextBox textMax;
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.Button butGraf;
+        private System.Windows.Forms.Button butTree;
     }
 }
 

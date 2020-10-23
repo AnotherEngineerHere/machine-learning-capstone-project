@@ -1,6 +1,6 @@
 ﻿namespace Capstone.GUI
 {
-    partial class Graficos
+    partial class Graphics
     {
         /// <summary>
         /// Required designer variable.
