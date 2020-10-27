@@ -139,11 +139,11 @@
             this.puertas.TabIndex = 6;
             this.puertas.Text = "puetas";
             // 
-            // Graficos
+            // Graphics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.puertas);
             this.Controls.Add(this.porcentaje);
@@ -152,7 +152,7 @@
             this.Controls.Add(this.precioMaximo);
             this.Controls.Add(this.butPastelPor);
             this.Controls.Add(this.chartMarca);
-            this.Name = "Graficos";
+            this.Name = "Graphics";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.chartMarca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.porcentaje)).EndInit();
