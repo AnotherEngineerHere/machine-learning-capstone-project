@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace Capstone.GUI
 {
     public partial class ID3 : Form
     {
+        public const string PATH = @"../../Data/tree.csv";
+
         CSVFileHandler csv;
 
         string path;
@@ -40,8 +43,15 @@ namespace Capstone.GUI
             textTree.Text = tr;
             textTree.ReadOnly = true;
 
-            csv.
+           
+            if(!File.Exists(PATH))
+            {
+                csv.ExportToCsvFile(tr, PATH);
+            }
+            
         }
+
+        
       
     }
 }

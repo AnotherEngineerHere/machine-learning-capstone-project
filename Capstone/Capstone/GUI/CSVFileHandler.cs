@@ -69,41 +69,15 @@ namespace Capstone.GUI
             return data?.Rows.Count > 0 ? data : null;
         }
 
-        public static void ExportToCsvFile(DataTable data, string filePath)
+        public void ExportToCsvFile(string data, string filePath)
         {
-            if (data.Columns.Count == 0)
-            {
-                throw new Exception("Nothing to export");
-            }
 
-            var sb = new StringBuilder();
-
-            // add titles to the string builder
-            foreach (var item in data.Columns)
-            {
-                // seperate values with a ;
-                sb.AppendFormat($"{item};");
-            }
-
-            sb.AppendLine();
-
+       
             // add every row to the string builder
-            for (var i = 0; i < data.Rows.Count; i++)
-            {
-                for (var j = 0; j < data.Columns.Count; j++)
-                {
-                    // seperate values with a ;
-                    sb.AppendFormat($"{data.Rows[i][j]};");
-                }
 
-                sb.AppendLine();
-            }
+            File.WriteAllText(filePath, data);
 
-            File.WriteAllText(filePath, sb.ToString());
-
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Data sucessfully exported");
-            Console.ResetColor();
+           
         }
     }
 }
