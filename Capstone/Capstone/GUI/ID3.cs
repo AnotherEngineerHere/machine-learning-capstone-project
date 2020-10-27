@@ -40,6 +40,7 @@ namespace Capstone.GUI
             textTree.Text = tr;
             textTree.ReadOnly = true;
 
+            csv.
         }
       
     }

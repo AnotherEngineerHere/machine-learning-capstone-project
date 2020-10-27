@@ -16,7 +16,7 @@ namespace DesicionTree_CapstoneProject
 {
     public partial class Principal : Form
     {
-        public const string PATH = @"../../Data/most.csv";
+        public const string PATH = @"../../Data/car.csv";
 
         ListCars lc;
 
@@ -54,7 +54,7 @@ namespace DesicionTree_CapstoneProject
 
             string[] lineas = File.ReadAllLines(PATH);
 
-            for (int i = 0; i < lineas.Length; i++)
+            for (int i = 1; i < lineas.Length; i++)
             {
                 string[] celdas = lineas[i].Split(';');
 
