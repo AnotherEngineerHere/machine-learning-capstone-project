@@ -67,6 +67,8 @@
             this.butProbe.TabIndex = 3;
             this.butProbe.Text = "Probe ID3";
             this.butProbe.UseVisualStyleBackColor = true;
+            this.butProbe.Visible = false;
+            this.butProbe.Click += new System.EventHandler(this.butProbe_Click);
             // 
             // butRegister
             // 
@@ -76,6 +78,7 @@
             this.butRegister.TabIndex = 4;
             this.butRegister.Text = "Enter a Example";
             this.butRegister.UseVisualStyleBackColor = true;
+            this.butRegister.Visible = false;
             // 
             // label1
             // 

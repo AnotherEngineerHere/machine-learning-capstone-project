@@ -21,12 +21,13 @@ namespace Capstone.GUI
 
         CSVFileHandler csv;
 
-        string path;
-
         Tree tree;
 
         DataTable data;
 
+        string path;
+
+        string result;
 
         public ID3(string path)
         {
@@ -86,20 +87,19 @@ namespace Capstone.GUI
 
                 var result = tree.CalculateResult(tree.Root, valuesForQuery, "");
 
-                if (result.Contains("Attribute not found"))
-                {
-                    Console.WriteLine("Ramdom answer: Yes");
-                }
-                else
-                {   
-                    Console.WriteLine(result);
-                }
+                this.result = result;
 
-            }         
-            
+            }
+            butProbe.Visible = true;
+            butRegister.Visible = true;
 
         }
-      
+
+        private void butProbe_Click(object sender, EventArgs e)
+        {
+            ID3Probe idp = new ID3Probe(result);
+            idp.Show();
+        }
     }
 }
 

@@ -12,12 +12,19 @@ namespace Capstone.GUI
 {
     public partial class ID3Probe : Form
     {
+        string result;
+
         public ID3Probe()
         {
             InitializeComponent();
 
         }
 
-
+        public ID3Probe(string result)
+        {
+            this.result = result;
+        }
     }
+
 }
+
