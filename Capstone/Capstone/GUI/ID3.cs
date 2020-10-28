@@ -10,11 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Capstone.GUI
 {
     public partial class ID3 : Form
     {
-        public const string PATH = @"../../Data/tree.csv";
+        public const string PATH = @"../../Data/car.csv";
 
         CSVFileHandler csv;
 
@@ -30,6 +31,7 @@ namespace Capstone.GUI
             tree = new Tree();
             InitializeComponent();
             CreateTree();
+            
          
         }
 
@@ -44,10 +46,7 @@ namespace Capstone.GUI
             textTree.ReadOnly = true;
 
            
-            if(!File.Exists(PATH))
-            {
-                csv.ExportToCsvFile(tr, PATH);
-            }
+           
             
         }
 

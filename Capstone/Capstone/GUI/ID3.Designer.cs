@@ -37,11 +37,11 @@
             // 
             this.textTree.BackColor = System.Drawing.SystemColors.InfoText;
             this.textTree.ForeColor = System.Drawing.Color.Lime;
-            this.textTree.Location = new System.Drawing.Point(12, 60);
+            this.textTree.Location = new System.Drawing.Point(12, 51);
             this.textTree.Multiline = true;
             this.textTree.Name = "textTree";
             this.textTree.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textTree.Size = new System.Drawing.Size(534, 177);
+            this.textTree.Size = new System.Drawing.Size(792, 257);
             this.textTree.TabIndex = 0;
             // 
             // labResult

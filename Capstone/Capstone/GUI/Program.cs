@@ -17,7 +17,6 @@ namespace DesicionTree_CapstoneProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());
-            Console.WriteLine("hola buenas tardes");
         }
     }
 }
