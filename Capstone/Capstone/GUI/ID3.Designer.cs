@@ -44,16 +44,15 @@
             this.textTree.Multiline = true;
             this.textTree.Name = "textTree";
             this.textTree.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textTree.Size = new System.Drawing.Size(792, 312);
+            this.textTree.Size = new System.Drawing.Size(813, 312);
             this.textTree.TabIndex = 0;
             // 
             // labResult
             // 
             this.labResult.AutoSize = true;
-            this.labResult.BackColor = System.Drawing.Color.AliceBlue;
+            this.labResult.BackColor = System.Drawing.Color.Transparent;
             this.labResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labResult.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labResult.Image = ((System.Drawing.Image)(resources.GetObject("labResult.Image")));
             this.labResult.Location = new System.Drawing.Point(23, 25);
             this.labResult.Name = "labResult";
             this.labResult.Size = new System.Drawing.Size(71, 24);
@@ -84,7 +83,7 @@
             this.label1.BackColor = System.Drawing.Color.SlateGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(80, 66);
+            this.label1.Location = new System.Drawing.Point(100, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(646, 21);
             this.label1.TabIndex = 5;
@@ -96,7 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(833, 463);
+            this.ClientSize = new System.Drawing.Size(841, 474);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.butRegister);
             this.Controls.Add(this.butProbe);

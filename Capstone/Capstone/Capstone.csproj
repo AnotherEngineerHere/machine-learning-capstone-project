@@ -83,6 +83,12 @@
     <Compile Include="GUI\ID3.Designer.cs">
       <DependentUpon>ID3.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ID3Probe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ID3Probe.Designer.cs">
+      <DependentUpon>ID3Probe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ID3.resx">
       <DependentUpon>ID3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ID3Probe.resx">
+      <DependentUpon>ID3Probe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

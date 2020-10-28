@@ -15,6 +15,9 @@ namespace Capstone.GUI
         public ID3Probe()
         {
             InitializeComponent();
+
         }
+
+
     }
 }
