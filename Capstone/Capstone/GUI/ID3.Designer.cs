@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ID3));
             this.textTree = new System.Windows.Forms.TextBox();
             this.labResult = new System.Windows.Forms.Label();
+            this.textProbe = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textTree
@@ -41,7 +42,7 @@
             this.textTree.Multiline = true;
             this.textTree.Name = "textTree";
             this.textTree.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textTree.Size = new System.Drawing.Size(792, 257);
+            this.textTree.Size = new System.Drawing.Size(792, 203);
             this.textTree.TabIndex = 0;
             // 
             // labResult
@@ -57,12 +58,21 @@
             this.labResult.TabIndex = 1;
             this.labResult.Text = "Results";
             // 
+            // textProbe
+            // 
+            this.textProbe.Location = new System.Drawing.Point(118, 272);
+            this.textProbe.Multiline = true;
+            this.textProbe.Name = "textProbe";
+            this.textProbe.Size = new System.Drawing.Size(561, 166);
+            this.textProbe.TabIndex = 2;
+            // 
             // ID3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(833, 463);
+            this.Controls.Add(this.textProbe);
             this.Controls.Add(this.labResult);
             this.Controls.Add(this.textTree);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -77,5 +87,6 @@
 
         private System.Windows.Forms.TextBox textTree;
         private System.Windows.Forms.Label labResult;
+        private System.Windows.Forms.TextBox textProbe;
     }
 }

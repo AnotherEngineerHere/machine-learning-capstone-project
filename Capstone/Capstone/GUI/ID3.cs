@@ -15,7 +15,7 @@ namespace Capstone.GUI
 {
     public partial class ID3 : Form
     {
-        public const string PATH = @"../../Data/car.csv";
+        public const string PATH = @"../../Data/probe.csv";
 
         CSVFileHandler csv;
 
@@ -31,7 +31,7 @@ namespace Capstone.GUI
             tree = new Tree();
             InitializeComponent();
             CreateTree();
-            
+            ProbeTree();
          
         }
 
@@ -44,13 +44,54 @@ namespace Capstone.GUI
             string tr = tree.Visual;
             textTree.Text = tr;
             textTree.ReadOnly = true;
-
-           
-           
-            
         }
 
-        
+        public void ProbeTree()
+        {
+            
+
+            var valuesForQuery = new Dictionary<string, string>();
+
+            DataTable data = csv.ImportFromCsvFile(path);
+
+            string[] lines = File.ReadAllLines(PATH);
+
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                valuesForQuery.Clear();
+                string[] celdas = lines[i].Split(';');
+
+                string buying = celdas[0];
+                string maint = celdas[1];
+                string doors = celdas[2];
+                string persons = celdas[3];
+                string lug_boot = celdas[4];
+                string safety = celdas[5];
+
+                valuesForQuery.Add(data.Columns[0].ToString(), buying);
+                valuesForQuery.Add(data.Columns[1].ToString(), maint);
+                valuesForQuery.Add(data.Columns[2].ToString(), doors);
+                valuesForQuery.Add(data.Columns[3].ToString(), persons);
+                valuesForQuery.Add(data.Columns[4].ToString(), lug_boot);
+                valuesForQuery.Add(data.Columns[5].ToString(), safety);
+
+                var result = tree.CalculateResult(tree.Root, valuesForQuery, "");
+
+                if (result.Contains("Attribute not found"))
+                {
+                    Console.WriteLine("Ramdom answer: Yes");
+                }
+                else
+                {
+                    
+                    Console.WriteLine(result);
+                }
+
+            }         
+            
+
+        }
       
     }
 }
