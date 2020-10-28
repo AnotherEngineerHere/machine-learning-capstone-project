@@ -320,10 +320,8 @@ namespace DesicionTree_CapstoneProject
 
         private void butTree_Click(object sender, EventArgs e)
         {
-
             ID3 id3 = new ID3(PATH);
             id3.Show();
-
             
         }
 

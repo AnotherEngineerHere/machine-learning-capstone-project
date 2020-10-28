@@ -97,8 +97,8 @@ namespace Capstone.GUI
 
         private void butProbe_Click(object sender, EventArgs e)
         {
-            ID3Probe idp = new ID3Probe(result);
-            idp.Show();
+            Probe p = new Probe();
+            p.Show();
         }
     }
 }

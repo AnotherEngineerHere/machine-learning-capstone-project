@@ -233,6 +233,7 @@ namespace DesicionTree_CapstoneProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1061, 542);
@@ -254,6 +255,8 @@ namespace DesicionTree_CapstoneProject
             this.Controls.Add(this.labWelcome);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Principal";
             this.Text = "Principal";
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).EndInit();
