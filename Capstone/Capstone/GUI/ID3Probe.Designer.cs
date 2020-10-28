@@ -93,6 +93,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ID3Probe";
             this.Text = "ID3Probe";
+            this.Load += new System.EventHandler(this.ID3Probe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataProbe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
