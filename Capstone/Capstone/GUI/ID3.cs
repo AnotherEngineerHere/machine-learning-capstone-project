@@ -17,11 +17,15 @@ namespace Capstone.GUI
     {
         public const string PATH = @"../../Data/probe.csv";
 
+        public const string TREE = @"../../Data/tree.csv";
+
         CSVFileHandler csv;
 
         string path;
 
         Tree tree;
+
+        DataTable data;
 
 
         public ID3(string path)
@@ -37,13 +41,19 @@ namespace Capstone.GUI
 
         public void CreateTree() 
         {
-            DataTable data = csv.ImportFromCsvFile(path);
+            data = csv.ImportFromCsvFile(path);
             tree.Root = tree.Learn(data, "");
           
             tree.Print(tree.Root, tree.Root.Name.ToUpper());
             string tr = tree.Visual;
             textTree.Text = tr;
             textTree.ReadOnly = true;
+
+            if (!File.Exists(TREE)) 
+            {
+
+                csv.ExportToCsvFile(tr,TREE);
+            }
         }
 
         public void ProbeTree()
@@ -51,8 +61,6 @@ namespace Capstone.GUI
             
 
             var valuesForQuery = new Dictionary<string, string>();
-
-            DataTable data = csv.ImportFromCsvFile(path);
 
             string[] lines = File.ReadAllLines(PATH);
 
@@ -83,8 +91,7 @@ namespace Capstone.GUI
                     Console.WriteLine("Ramdom answer: Yes");
                 }
                 else
-                {
-                    
+                {   
                     Console.WriteLine(result);
                 }
 
