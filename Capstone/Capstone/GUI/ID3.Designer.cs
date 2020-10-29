@@ -34,7 +34,6 @@
             this.butProbe = new System.Windows.Forms.Button();
             this.butRegister = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ButGraph = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textTree
@@ -94,30 +93,23 @@
             this.label1.Text = "This window shows the output ID3 for the Training Data Set in the previous window" +
     "";
             // 
-            // ButGraph
-            // 
-            this.ButGraph.Location = new System.Drawing.Point(262, 419);
-            this.ButGraph.Name = "ButGraph";
-            this.ButGraph.Size = new System.Drawing.Size(106, 32);
-            this.ButGraph.TabIndex = 6;
-            this.ButGraph.Text = "Graph";
-            this.ButGraph.UseVisualStyleBackColor = true;
-            this.ButGraph.Visible = false;
-            // 
             // ID3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(841, 474);
-            this.Controls.Add(this.ButGraph);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.butRegister);
             this.Controls.Add(this.butProbe);
             this.Controls.Add(this.labResult);
             this.Controls.Add(this.textTree);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ID3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ID3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,6 +123,5 @@
         private System.Windows.Forms.Button butProbe;
         private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button ButGraph;
     }
 }

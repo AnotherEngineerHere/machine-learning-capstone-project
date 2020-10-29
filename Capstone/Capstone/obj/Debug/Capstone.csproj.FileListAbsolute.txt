@@ -59,16 +59,3 @@ C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Ca
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.exe
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.pdb
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Probe.resources
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\bin\Debug\Capstone.exe.config
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\bin\Debug\Capstone.exe
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\bin\Debug\Capstone.pdb
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.GUI.Graphics.resources
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.GUI.ID3.resources
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\DesicionTree_CapstoneProject.Principal.resources
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.GUI.Probe.resources
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.Properties.Resources.resources
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.exe
-D:\Documentos\C#\CapstoneProject\sdfsdfsdaf\machine-learning-capstone-project-develop\Capstone\Capstone\obj\Debug\Capstone.pdb
