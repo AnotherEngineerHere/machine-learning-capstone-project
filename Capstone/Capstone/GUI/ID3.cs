@@ -105,7 +105,7 @@ namespace Capstone.GUI
 
         private void butRegister_Click(object sender, EventArgs e)
         {
-            EnterSample es = new EnterSample();
+            EnterSample es = new EnterSample(tree);
             es.Show();
         }
     }

@@ -7,20 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capstone.Decision_Tree;
 
 namespace Capstone.GUI
 {
+    
+
     public partial class EnterSample : Form
     {
+        Tree tree;
+
         string[] buying = { "vhigh","high","med","low"};
         string[] maint = { "vhigh", "high", "med","low" };
         string[] doors = { "2","3","4","5" };
         string[] persons = { "2", "4", "5" };
-        string[] lugbot = { "low", "med", "high" };
+        string[] lugbot = { "small", "med", "big" };
         string[] safety = {"low","med","high"};
 
 
-        public EnterSample()
+        public EnterSample(Tree t)
         {
             InitializeComponent();
             Fill(buying,BuyingCB);
@@ -29,6 +34,8 @@ namespace Capstone.GUI
             Fill(persons, PersonsCB);
             Fill(lugbot, LugBootCB);
             Fill(safety,SafetyCB);
+
+            this.tree = t;
             
         }
 
@@ -40,9 +47,42 @@ namespace Capstone.GUI
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void CalculateAOutput()
         {
 
+
+            var valuesForQuery = new Dictionary<string, string>();
+
+            string buying = BuyingCB.Text;
+            string maint = MaintCB.Text;
+            string doors = DoorsCB.Text;
+            string persons = PersonsCB.Text;
+            string lug_boot = LugBootCB.Text;
+            string safety = SafetyCB.Text;
+
+            valuesForQuery.Add("BUYING", buying);
+            valuesForQuery.Add("MAINT", maint);
+            valuesForQuery.Add("DOORS", doors);
+            valuesForQuery.Add("PERSONS", persons);
+            valuesForQuery.Add("LUG_BOOT", lug_boot);
+            valuesForQuery.Add("SAFETY", safety);
+
+            var result = tree.CalculateResult(tree.Root, valuesForQuery, "");
+
+            if (result.Contains("Attribute not found"))
+            {
+                MessageBox.Show("Can't caluclate outcome. Na valid route through the tree was found");
+            }
+            else
+            {
+                textSample.Text = result;
+            }
+
+        }
+
+        private void butCal_Click(object sender, EventArgs e)
+        {
+            CalculateAOutput();
         }
     }
 }
