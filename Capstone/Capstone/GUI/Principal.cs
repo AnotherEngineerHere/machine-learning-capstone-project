@@ -22,7 +22,7 @@ namespace DesicionTree_CapstoneProject
 
         DataSet ds;
 
-        string[] _categories = { "Buying", "Maintenance","Doors","Persons","Lug_Boot","Safety" };
+        string[] _categories = { "MARCA", "PRECIO DE VENTA", "PRECIO DE MANTENIMIENTO","NUMERO DE PUERTAS","PASAJEROS","TAMAÑO DEL RETENEDOR","NIVEL DE SEGURIDAD" };
 
         public Principal()
         {
@@ -44,14 +44,13 @@ namespace DesicionTree_CapstoneProject
             string title = "Cars Data";
             ds = new DataSet();
             ds.Tables.Add(title);
-            
-            ds.Tables[title].Columns.Add("Buying");
-            ds.Tables[title].Columns.Add("Maintenance");
-            ds.Tables[title].Columns.Add("Doors");
-            ds.Tables[title].Columns.Add("Persons");
-            ds.Tables[title].Columns.Add("Lug_Boot");
-            ds.Tables[title].Columns.Add("Safety");
-            ds.Tables[title].Columns.Add("IsGoodOption");
+            ds.Tables[title].Columns.Add("P_VENTA");
+            ds.Tables[title].Columns.Add("P_MANTENIMIENTO");
+            ds.Tables[title].Columns.Add("N_PUERTAS");
+            ds.Tables[title].Columns.Add("N_OCUPANTES");
+            ds.Tables[title].Columns.Add("TAM_RETENEDOR");
+            ds.Tables[title].Columns.Add("NIVEL_SEG");
+            ds.Tables[title].Columns.Add("CARFET");
 
             string[] lineas = File.ReadAllLines(PATH);
 
@@ -59,17 +58,17 @@ namespace DesicionTree_CapstoneProject
             {
                 string[] celdas = lineas[i].Split(';');
 
-                string _sold_Price = celdas[0];
-                string _maintenance_Price = celdas[1];
-                string _number_doors = celdas[2];
-                string _number_occupants = celdas[3];
-                string _lug_Boot_Size = celdas[4];
-                string _safety_Leve = celdas[5];
-                string _carft = celdas[6];
+                string _brand = celdas[0];
+                string _sold_Price = celdas[1];
+                string _maintenance_Price = celdas[2];
+                string _number_doors = celdas[3];
+                string _number_occupants = celdas[4];
+                string _lug_Boot_Size = celdas[5];
+                string _safety_Leve = celdas[6];
 
 
-                ds.Tables[title].Rows.Add(_sold_Price, _maintenance_Price, _number_doors, _number_occupants, _lug_Boot_Size, _safety_Leve,_carft);
-                lc.Add_Car(_sold_Price, _maintenance_Price, _number_doors, _number_occupants, _lug_Boot_Size, _safety_Leve, _carft);
+                ds.Tables[title].Rows.Add(_brand, _sold_Price, _maintenance_Price, _number_doors, _number_occupants, _lug_Boot_Size, _safety_Leve);
+                lc.Add_Car(_brand, _sold_Price, _maintenance_Price, _number_doors, _number_occupants, _lug_Boot_Size, _safety_Leve);
                  
 
             }
@@ -95,20 +94,20 @@ namespace DesicionTree_CapstoneProject
             ds = new DataSet();
 
             ds.Tables.Add(title);
-
-            ds.Tables[title].Columns.Add("Buying");
-            ds.Tables[title].Columns.Add("Maintenance");
-            ds.Tables[title].Columns.Add("Doors");
-            ds.Tables[title].Columns.Add("Persons");
-            ds.Tables[title].Columns.Add("Lug_Boot");
-            ds.Tables[title].Columns.Add("Safety");
-            ds.Tables[title].Columns.Add("IsGoodOption");
+           
+            ds.Tables[title].Columns.Add("MARCA");
+            ds.Tables[title].Columns.Add("P_VENTA");
+            ds.Tables[title].Columns.Add("P_MANTENIMIENTO");
+            ds.Tables[title].Columns.Add("N_PUERTAS");
+            ds.Tables[title].Columns.Add("N_OCUPANTES");
+            ds.Tables[title].Columns.Add("TAM_RETENEDOR");
+            ds.Tables[title].Columns.Add("NIVEL_SEG");
 
             string[] lineas = File.ReadAllLines(PATH);
 
             for (int i = 0; i < list.Count; i++)
             {
-                ds.Tables[title].Rows.Add(list[i].Sold_Price, list[i].Maintenace_Price, list[i].Number_Doors, list[i].Number_Occupants, list[i].Lug_Boot_Size, list[i].Safety_Level,list[i].CarF);
+                ds.Tables[title].Rows.Add(list[i].Brand, list[i].Sold_Price, list[i].Maintenace_Price, list[i].Number_Doors, list[i].Number_Occupants, list[i].Lug_Boot_Size, list[i].Safety_Level);
 
             }
 
@@ -129,39 +128,51 @@ namespace DesicionTree_CapstoneProject
 
         private void butAcceptar_Click(object sender, EventArgs e)
         {
-            if (CategoriesCB.Text.ToString().Equals("Buying"))
+            if (CategoriesCB.Text.ToString().Equals("MARCA")) 
+            {
+                Search_Method();
+            }
+            else if (CategoriesCB.Text.ToString().Equals("PRECIO DE VENTA"))
             {
                 DataTable dt = ((DataView)dataCar.DataSource).Table;
-                dt.DefaultView.RowFilter = string.Format("Buying = '{0}'", ComboMultiple.Text);
+                dt.DefaultView.RowFilter = string.Format("P_VENTA = '{0}'", ComboMultiple.Text);
             }
-            else if (CategoriesCB.Text.ToString().Equals("Maintenance"))
+            else if (CategoriesCB.Text.ToString().Equals("PRECIO DE MANTENIMIENTO"))
             {
                 DataTable dt = ((DataView)dataCar.DataSource).Table;
-                dt.DefaultView.RowFilter = string.Format("Maintenance = '{0}'", ComboMultiple.Text);
+                dt.DefaultView.RowFilter = string.Format("P_MANTENIMIENTO = '{0}'", ComboMultiple.Text);
             }
-            else if (CategoriesCB.Text.ToString().Equals("Doors"))
+            else if (CategoriesCB.Text.ToString().Equals("NUMERO DE PUERTAS"))
             {
                 Interval_Method(1);
             }
-            else if (CategoriesCB.Text.ToString().Equals("Persons"))
+            else if (CategoriesCB.Text.ToString().Equals("PASAJEROS"))
             {
                 Interval_Method(2);
             }
-            else if (CategoriesCB.Text.ToString().Equals("Lug_Boot"))
+            else if (CategoriesCB.Text.ToString().Equals("TAMAÑO DEL RETENEDOR"))
             {
                 DataTable dt = ((DataView)dataCar.DataSource).Table;
-                dt.DefaultView.RowFilter = string.Format("Lug_Boot = '{0}'", ComboMultiple.Text);
+                dt.DefaultView.RowFilter = string.Format("TAM_RETENEDOR = '{0}'", ComboMultiple.Text);
             }
-            else if (CategoriesCB.Text.ToString().Equals("Safety"))
+            else if (CategoriesCB.Text.ToString().Equals("NIVEL DE SEGURIDAD"))
             {
                 DataTable dt = ((DataView)dataCar.DataSource).Table;
-                dt.DefaultView.RowFilter = string.Format("Safety = '{0}'", ComboMultiple.Text);
+                dt.DefaultView.RowFilter = string.Format("NIVEL_SEG = '{0}'", ComboMultiple.Text);
             }
 
 
         }
 
-       
+        public void Search_Method()
+        {
+            List<Car> o = lc.Get_SubString_For_A_Search(textSearch.Text);
+
+            Fill_Table(o);
+
+            textSearch.Focus();
+            textSearch.Select(0, 0);
+        }
 
         public void Interval_Method(int type)
         {
@@ -181,12 +192,12 @@ namespace DesicionTree_CapstoneProject
                 }
                 else
                 {
-                    MessageBox.Show("Invalido range");
+                    MessageBox.Show("Rango invalido");
                 }
             }
             else
             {
-                MessageBox.Show("Entered data must be numbers");
+                MessageBox.Show("Los caracteres ingresados deben ser numeros");
             }
         }
       
@@ -196,7 +207,17 @@ namespace DesicionTree_CapstoneProject
             labFilter.Visible = true;
             butAcceptar.Visible = true;
 
-           if(CategoriesCB.Text.ToString().Equals("Buying"))
+            if (CategoriesCB.Text.ToString().Equals("MARCA"))
+            {
+
+                labMin.Visible = false;
+                labMax.Visible = false;
+                textMax.Visible = false;
+                textMin.Visible = false;
+                ComboMultiple.Visible = false;
+                textSearch.Visible = true;
+            }
+            else if(CategoriesCB.Text.ToString().Equals("PRECIO DE VENTA"))
             {
                 textSearch.Visible = false;
                 ComboMultiple.Items.Clear();
@@ -212,7 +233,7 @@ namespace DesicionTree_CapstoneProject
                     ComboMultiple.Items.Add(_sp[i]);
                 }
             }
-            else if (CategoriesCB.Text.ToString().Equals("Maintenance"))
+            else if (CategoriesCB.Text.ToString().Equals("PRECIO DE MANTENIMIENTO"))
             {
                 textSearch.Visible = false;
                 ComboMultiple.Items.Clear();
@@ -228,7 +249,7 @@ namespace DesicionTree_CapstoneProject
                     ComboMultiple.Items.Add(_sp[i]);
                 }
             }
-            else if (CategoriesCB.Text.ToString().Equals("Doors"))
+            else if (CategoriesCB.Text.ToString().Equals("NUMERO DE PUERTAS"))
             {
                 textSearch.Visible = false;
                 textMax.Clear();
@@ -240,7 +261,7 @@ namespace DesicionTree_CapstoneProject
                 ComboMultiple.Visible = false;
 
             }
-            else if (CategoriesCB.Text.ToString().Equals("Persons"))
+            else if (CategoriesCB.Text.ToString().Equals("PASAJEROS"))
             {
                 ComboMultiple.Visible = false;
                 textSearch.Visible = false;
@@ -253,7 +274,7 @@ namespace DesicionTree_CapstoneProject
            
 
             }
-            else if (CategoriesCB.Text.ToString().Equals("Lug_Boot"))
+            else if (CategoriesCB.Text.ToString().Equals("TAMAÑO DEL RETENEDOR"))
             {
                 ComboMultiple.Items.Clear();
                 textSearch.Visible = false;
@@ -269,7 +290,7 @@ namespace DesicionTree_CapstoneProject
                     ComboMultiple.Items.Add(_sp[i]);
                 }
             }
-            else if (CategoriesCB.Text.ToString().Equals("Safety"))
+            else if (CategoriesCB.Text.ToString().Equals("NIVEL DE SEGURIDAD"))
             {
                 textSearch.Visible = false;
                 ComboMultiple.Items.Clear();

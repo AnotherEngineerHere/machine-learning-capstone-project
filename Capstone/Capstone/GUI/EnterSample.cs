@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Capstone.GUI
 {
-    public partial class Probe : Form
+    public partial class EnterSample : Form
     {
-        public Probe()
+        public EnterSample()
         {
             InitializeComponent();
         }
+
+
     }
 }

@@ -258,7 +258,6 @@ namespace DesicionTree_CapstoneProject
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Principal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).EndInit();
             this.ResumeLayout(false);

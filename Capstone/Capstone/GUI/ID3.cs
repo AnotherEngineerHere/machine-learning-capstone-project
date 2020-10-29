@@ -87,21 +87,21 @@ namespace Capstone.GUI
 
                 var result = tree.CalculateResult(tree.Root, valuesForQuery, "");
 
-                
-                this.result += result;
-                this.result += "\r\n";
+                this.result = result;
 
             }
             butProbe.Visible = true;
             butRegister.Visible = true;
+            ButGraph.Visible = true;
 
         }
 
         private void butProbe_Click(object sender, EventArgs e)
         {
-            Probe p = new Probe(result);
+            Probe p = new Probe();
             p.Show();
         }
+
     }
 }
 
