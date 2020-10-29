@@ -73,4 +73,3 @@ D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.exe
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.pdb
-C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.EnterSample.resources
