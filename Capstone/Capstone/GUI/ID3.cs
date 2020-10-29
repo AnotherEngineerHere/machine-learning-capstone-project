@@ -50,11 +50,30 @@ namespace Capstone.GUI
             textTree.Text = tr;
             textTree.ReadOnly = true;
 
-            if (!File.Exists(TREE)) 
-            {
+           
+            string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            List<string> s = new List<string>();
 
-                csv.ExportToCsvFile(tr,TREE);
+            for (int i = 0; i < r.Length; i++)
+            {
+                s.Add(r[i]);
             }
+
+            var cs = new StringBuilder();
+            foreach (var item in MakeTree(s,';'))
+            {
+          
+                //Suggestion made by KyleMit
+                var newLine = string.Format("{0}", item);
+                cs.AppendLine(newLine);
+            }
+            File.WriteAllText(TREE, cs.ToString());
+
+            //if (!File.Exists(TREE)) 
+            //{
+
+            //  csv.ExportToCsvFile(tr,TREE);
+            //}
         }
 
         public void ProbeTree()
@@ -95,6 +114,51 @@ namespace Capstone.GUI
             butProbe.Visible = true;
             butRegister.Visible = true;
 
+        }
+
+        public static List<string> MakeTree(List<string> arRows, char sSeperator)
+        {
+            List<string> arReturnNodes = new List<string>();
+            arRows.Sort();
+            string sLastPath = "";
+            int iFolderLength = 0;
+
+            for (int iRow = 0; iRow < arRows.Count; iRow++)
+            {
+                string sRow = arRows[iRow];
+                string[] sFolders = sRow.Split(sSeperator);
+                iFolderLength = sFolders.Length;
+                string sTab = "";
+                string[] sLastFolders = sLastPath.Split(sSeperator);
+                for (int i = 0; i < iFolderLength; i++)
+                {
+                    if (i > 0)
+                    {
+                        sTab = sTab + "     ";
+                    }
+
+                    if (!sLastPath.Equals(sRow))
+                    {
+
+                        if (sLastFolders != null && sLastFolders.Length > i)
+                        {
+                            if (!sLastFolders[i].Equals(sFolders[i]))
+                            {
+                                arReturnNodes.Add(sTab + sFolders[i]);
+                                sLastFolders = null;
+                            }
+                        }
+                        else
+                        {
+                            arReturnNodes.Add(sTab + sFolders[i]);
+
+                        }
+                    }
+
+                }
+                sLastPath = sRow;
+            }
+            return arReturnNodes;
         }
 
         private void butProbe_Click(object sender, EventArgs e)
