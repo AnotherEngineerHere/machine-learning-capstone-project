@@ -79,6 +79,7 @@
             this.butRegister.Text = "Enter a Example";
             this.butRegister.UseVisualStyleBackColor = true;
             this.butRegister.Visible = false;
+            this.butRegister.Click += new System.EventHandler(this.butRegister_Click);
             // 
             // label1
             // 

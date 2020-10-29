@@ -102,6 +102,12 @@ namespace Capstone.GUI
             Probe p = new Probe(result);
             p.Show();
         }
+
+        private void butRegister_Click(object sender, EventArgs e)
+        {
+            EnterSample es = new EnterSample();
+            es.Show();
+        }
     }
 }
 
