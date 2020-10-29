@@ -44,13 +44,14 @@ namespace DesicionTree_CapstoneProject
             string title = "Cars Data";
             ds = new DataSet();
             ds.Tables.Add(title);
-            ds.Tables[title].Columns.Add("P_VENTA");
-            ds.Tables[title].Columns.Add("P_MANTENIMIENTO");
-            ds.Tables[title].Columns.Add("N_PUERTAS");
-            ds.Tables[title].Columns.Add("N_OCUPANTES");
-            ds.Tables[title].Columns.Add("TAM_RETENEDOR");
-            ds.Tables[title].Columns.Add("NIVEL_SEG");
-            ds.Tables[title].Columns.Add("CARFET");
+            
+            ds.Tables[title].Columns.Add("Buying");
+            ds.Tables[title].Columns.Add("Maintenance");
+            ds.Tables[title].Columns.Add("Doors");
+            ds.Tables[title].Columns.Add("Persons");
+            ds.Tables[title].Columns.Add("Lug_Boot");
+            ds.Tables[title].Columns.Add("Safety");
+            ds.Tables[title].Columns.Add("IsGoodOption");
 
             string[] lineas = File.ReadAllLines(PATH);
 
