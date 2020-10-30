@@ -58,6 +58,7 @@
             this.barras.Legends.Add(legend1);
             this.barras.Location = new System.Drawing.Point(12, 12);
             this.barras.Name = "barras";
+            this.barras.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
