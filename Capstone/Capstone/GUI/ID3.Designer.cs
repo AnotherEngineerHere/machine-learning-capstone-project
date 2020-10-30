@@ -50,7 +50,6 @@
             // 
             // butProbe
             // 
-            this.butProbe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butProbe.Location = new System.Drawing.Point(38, 419);
             this.butProbe.Name = "butProbe";
             this.butProbe.Size = new System.Drawing.Size(106, 32);
@@ -62,7 +61,6 @@
             // 
             // butRegister
             // 
-            this.butRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butRegister.Location = new System.Drawing.Point(150, 419);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(106, 32);
