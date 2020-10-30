@@ -63,7 +63,14 @@ namespace Capstone.GUI
 
         private void numberOfPeople_Click(object sender, EventArgs e)
         {
+            noShow();
+            clear();
+            porcentaje.Series[0].Points.AddXY("2", numbersCarsPerNumberOfPeople()[0]);
+            porcentaje.Series[0].Points.AddXY("3", numbersCarsPerNumberOfPeople()[1]);
+            porcentaje.Series[0].Points.AddXY("4", numbersCarsPerNumberOfPeople()[2]);
+            porcentaje.Series[0].Points.AddXY("5", numbersCarsPerNumberOfPeople()[3]);
 
+            porcentaje.Visible = true;
         }
 
         private void trunkSize_Click(object sender, EventArgs e)
