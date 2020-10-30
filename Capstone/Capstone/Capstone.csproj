@@ -71,6 +71,12 @@
     <Compile Include="GUI\CSVFileHandler.cs" />
     <Compile Include="Decision_Tree\Tree.cs" />
     <Compile Include="Decision_Tree\TreeNode.cs" />
+    <Compile Include="GUI\EnterSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EnterSample.Designer.cs">
+      <DependentUpon>EnterSample.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Graphics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,10 +95,19 @@
     <Compile Include="GUI\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Probe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Probe.Designer.cs">
+      <DependentUpon>Probe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Program.cs" />
     <Compile Include="Model\Car.cs" />
     <Compile Include="Model\ListCars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\EnterSample.resx">
+      <DependentUpon>EnterSample.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Probe.resx">
+      <DependentUpon>Probe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

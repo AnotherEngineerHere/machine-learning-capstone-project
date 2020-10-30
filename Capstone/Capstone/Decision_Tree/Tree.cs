@@ -31,7 +31,7 @@ namespace Capstone.Decision_Tree
             }
             foreach (var child in node.ChildNodes)
             {
-                Print(child, result + " -- " + child.Edge.ToLower() + " --> " + child.Name.ToUpper());
+                Print(child, result + " ; " + child.Edge.ToLower() + " ; " + child.Name.ToUpper());
             }
 
             s = print;

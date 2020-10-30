@@ -29,43 +29,84 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ID3));
-            this.textTree = new System.Windows.Forms.TextBox();
             this.labResult = new System.Windows.Forms.Label();
+            this.butProbe = new System.Windows.Forms.Button();
+            this.butRegister = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.treeData = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
-            // 
-            // textTree
-            // 
-            this.textTree.BackColor = System.Drawing.SystemColors.InfoText;
-            this.textTree.ForeColor = System.Drawing.Color.Lime;
-            this.textTree.Location = new System.Drawing.Point(12, 60);
-            this.textTree.Multiline = true;
-            this.textTree.Name = "textTree";
-            this.textTree.Size = new System.Drawing.Size(534, 177);
-            this.textTree.TabIndex = 0;
             // 
             // labResult
             // 
             this.labResult.AutoSize = true;
-            this.labResult.BackColor = System.Drawing.Color.AliceBlue;
+            this.labResult.BackColor = System.Drawing.Color.Transparent;
             this.labResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labResult.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labResult.Image = ((System.Drawing.Image)(resources.GetObject("labResult.Image")));
-            this.labResult.Location = new System.Drawing.Point(12, 24);
+            this.labResult.Location = new System.Drawing.Point(23, 25);
             this.labResult.Name = "labResult";
             this.labResult.Size = new System.Drawing.Size(71, 24);
             this.labResult.TabIndex = 1;
             this.labResult.Text = "Results";
             // 
+            // butProbe
+            // 
+            this.butProbe.Location = new System.Drawing.Point(38, 419);
+            this.butProbe.Name = "butProbe";
+            this.butProbe.Size = new System.Drawing.Size(106, 32);
+            this.butProbe.TabIndex = 3;
+            this.butProbe.Text = "Probe ID3";
+            this.butProbe.UseVisualStyleBackColor = true;
+            this.butProbe.Visible = false;
+            this.butProbe.Click += new System.EventHandler(this.butProbe_Click);
+            // 
+            // butRegister
+            // 
+            this.butRegister.Location = new System.Drawing.Point(150, 419);
+            this.butRegister.Name = "butRegister";
+            this.butRegister.Size = new System.Drawing.Size(106, 32);
+            this.butRegister.TabIndex = 4;
+            this.butRegister.Text = "Enter a Example";
+            this.butRegister.UseVisualStyleBackColor = true;
+            this.butRegister.Visible = false;
+            this.butRegister.Click += new System.EventHandler(this.butRegister_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.SlateGray;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(100, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(646, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "This window shows the output ID3 for the Training Data Set in the previous window" +
+    "";
+            // 
+            // treeData
+            // 
+            this.treeData.Location = new System.Drawing.Point(49, 106);
+            this.treeData.Name = "treeData";
+            this.treeData.Size = new System.Drawing.Size(728, 294);
+            this.treeData.TabIndex = 6;
+            // 
             // ID3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(833, 463);
+            this.ClientSize = new System.Drawing.Size(841, 474);
+            this.Controls.Add(this.treeData);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.butRegister);
+            this.Controls.Add(this.butProbe);
             this.Controls.Add(this.labResult);
-            this.Controls.Add(this.textTree);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ID3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ID3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -73,8 +114,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textTree;
         private System.Windows.Forms.Label labResult;
+        private System.Windows.Forms.Button butProbe;
+        private System.Windows.Forms.Button butRegister;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TreeView treeData;
     }
 }

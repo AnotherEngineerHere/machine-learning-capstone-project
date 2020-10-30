@@ -68,5 +68,16 @@ namespace Capstone.GUI
             // if no rows are entered or data == null, return null
             return data?.Rows.Count > 0 ? data : null;
         }
+
+        public void ExportToCsvFile(string data, string filePath)
+        {
+
+       
+            // add every row to the string builder
+
+            File.WriteAllText(filePath, data);
+
+           
+        }
     }
 }
