@@ -106,19 +106,19 @@ namespace Capstone.GUI
             int vhigh = 0;
             for (int i = 0; i < cars.Count; i++)
             {
-                if (cars[i].Sold_Price.Equals("low"))
+                if (cars[i].Maintenace_Price.Equals("low"))
                 {
                     low += 1;
                 }
-                if (cars[i].Sold_Price.Equals("med"))
+                if (cars[i].Maintenace_Price.Equals("med"))
                 {
                     med += 1;
                 }
-                if (cars[i].Sold_Price.Equals("high"))
+                if (cars[i].Maintenace_Price.Equals("high"))
                 {
                     high += 1;
                 }
-                if (cars[i].Sold_Price.Equals("vhigh"))
+                if (cars[i].Maintenace_Price.Equals("vhigh"))
                 {
                     vhigh += 1;
                 }
@@ -130,6 +130,40 @@ namespace Capstone.GUI
             price.Add(vhigh);
             return price;
         }
+        public List<int> numbersCarsPerNumberOfDoors()
+        {
+            List<int> numbers = new List<int>();
+            int t2 = 0;
+            int t3 = 0;
+            int f4 = 0;
+            int f5 = 0;
+            for (int i = 0; i < cars.Count; i++)
+            {
+                if (cars[i].Number_Doors.Equals("2"))
+                {
+                    t2 += 1;
+                }
+                if (cars[i].Number_Doors.Equals("3"))
+                {
+                    t3 += 1;
+                }
+                if (cars[i].Number_Doors.Equals("4"))
+                {
+                    f4 += 1;
+                }
+                if (cars[i].Number_Doors.Equals("2"))
+                {
+                    f5 += 1;
+                }
+
+            }
+            numbers.Add(t2);
+            numbers.Add(t3);
+            numbers.Add(f4);
+            numbers.Add(f5);
+            return numbers;
+        }
+
 
     }
 }
