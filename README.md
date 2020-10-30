@@ -29,7 +29,7 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 ## Documentation
 
-<a href="/Capstone/Documentation/Metodo de la Ingenieria.pdf">
+[a link](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Metodo%20de%20la%20Ingenieria.pdf)
 
 
 ## License
