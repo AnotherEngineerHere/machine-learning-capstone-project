@@ -38,6 +38,7 @@ namespace Capstone.GUI
         private void butPastelPor_Click(object sender, EventArgs e)
         {
             noShow();
+            
            
             porcentaje.Visible = true;
             

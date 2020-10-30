@@ -72,7 +72,7 @@
             this.butPastelPor.Name = "butPastelPor";
             this.butPastelPor.Size = new System.Drawing.Size(106, 23);
             this.butPastelPor.TabIndex = 1;
-            this.butPastelPor.Text = "Porcentaje Marca";
+            this.butPastelPor.Text = "Maintenance price";
             this.butPastelPor.UseVisualStyleBackColor = false;
             this.butPastelPor.Click += new System.EventHandler(this.butPastelPor_Click);
             // 
@@ -83,7 +83,7 @@
             this.precioMaximo.Name = "precioMaximo";
             this.precioMaximo.Size = new System.Drawing.Size(106, 23);
             this.precioMaximo.TabIndex = 2;
-            this.precioMaximo.Text = "Caros Marca";
+            this.precioMaximo.Text = "Number of doors";
             this.precioMaximo.UseVisualStyleBackColor = false;
             this.precioMaximo.Click += new System.EventHandler(this.precioMaximo_Click);
             // 
@@ -94,7 +94,7 @@
             this.buttonPorCaros.Name = "buttonPorCaros";
             this.buttonPorCaros.Size = new System.Drawing.Size(106, 23);
             this.buttonPorCaros.TabIndex = 3;
-            this.buttonPorCaros.Text = "Porcentaje Caros";
+            this.buttonPorCaros.Text = "Number of people";
             this.buttonPorCaros.UseVisualStyleBackColor = false;
             this.buttonPorCaros.Click += new System.EventHandler(this.buttonPorCaros_Click);
             // 
@@ -105,7 +105,7 @@
             this.buttPuertas.Name = "buttPuertas";
             this.buttPuertas.Size = new System.Drawing.Size(106, 25);
             this.buttPuertas.TabIndex = 4;
-            this.buttPuertas.Text = "Numero Puertas";
+            this.buttPuertas.Text = "Trunk size";
             this.buttPuertas.UseVisualStyleBackColor = false;
             this.buttPuertas.Click += new System.EventHandler(this.buttPuertas_Click);
             // 
