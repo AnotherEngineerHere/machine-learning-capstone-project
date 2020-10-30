@@ -37,7 +37,7 @@ namespace Capstone.GUI
             InitializeComponent();
             CreateTree();
             ProbeTree();
-         
+            LoadTreeViewFromFile(TREE);
         }
 
         public void CreateTree() 
@@ -47,8 +47,7 @@ namespace Capstone.GUI
           
             tree.Print(tree.Root, tree.Root.Name.ToUpper());
             string tr = tree.Visual;
-            textTree.Text = tr;
-            textTree.ReadOnly = true;
+           
 
            
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
@@ -62,24 +61,17 @@ namespace Capstone.GUI
             var cs = new StringBuilder();
             foreach (var item in MakeTree(s,';'))
             {
-          
-                //Suggestion made by KyleMit
                 var newLine = string.Format("{0}", item);
                 cs.AppendLine(newLine);
             }
             File.WriteAllText(TREE, cs.ToString());
 
-            //if (!File.Exists(TREE)) 
-            //{
-
-            //  csv.ExportToCsvFile(tr,TREE);
-            //}
+           
         }
 
         public void ProbeTree()
         {
             
-
             var valuesForQuery = new Dictionary<string, string>();
 
             string[] lines = File.ReadAllLines(PATH);
@@ -134,7 +126,7 @@ namespace Capstone.GUI
                 {
                     if (i > 0)
                     {
-                        sTab = sTab + "     ";
+                        sTab = sTab + '\t';
                     }
 
                     if (!sLastPath.Equals(sRow))
@@ -160,6 +152,36 @@ namespace Capstone.GUI
             }
             return arReturnNodes;
         }
+
+        public void LoadTreeViewFromFile(string file_name)
+        {
+            // Get the file's contents.
+            string file_contents = File.ReadAllText(file_name);
+
+            // Break the file into lines.
+            string[] lines = file_contents.Split(new char[] { '\r', '\n' },StringSplitOptions.RemoveEmptyEntries);
+
+            // Process the lines.
+            treeData.Nodes.Clear();
+
+            Dictionary<int, System.Windows.Forms.TreeNode> parents = new Dictionary<int, System.Windows.Forms.TreeNode>();
+            foreach (string text_line in lines)
+            {
+                // See how many tabs are at the start of the line.
+                int level = text_line.Length -text_line.TrimStart('\t').Length;
+
+                // Add the new node.
+                if (level == 0)
+                    parents[level] = treeData.Nodes.Add(text_line.Trim());
+                else
+                    parents[level] = parents[level - 1].Nodes.Add(text_line.Trim());
+                
+                parents[level].EnsureVisible();
+            }
+
+            if (treeData.Nodes.Count > 0) treeData.Nodes[0].EnsureVisible();
+        }
+
 
         private void butProbe_Click(object sender, EventArgs e)
         {

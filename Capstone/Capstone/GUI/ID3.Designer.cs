@@ -29,23 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ID3));
-            this.textTree = new System.Windows.Forms.TextBox();
             this.labResult = new System.Windows.Forms.Label();
             this.butProbe = new System.Windows.Forms.Button();
             this.butRegister = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.treeData = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
-            // 
-            // textTree
-            // 
-            this.textTree.BackColor = System.Drawing.SystemColors.InfoText;
-            this.textTree.ForeColor = System.Drawing.Color.Lime;
-            this.textTree.Location = new System.Drawing.Point(16, 100);
-            this.textTree.Multiline = true;
-            this.textTree.Name = "textTree";
-            this.textTree.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textTree.Size = new System.Drawing.Size(813, 312);
-            this.textTree.TabIndex = 0;
             // 
             // labResult
             // 
@@ -94,6 +83,13 @@
             this.label1.Text = "This window shows the output ID3 for the Training Data Set in the previous window" +
     "";
             // 
+            // treeData
+            // 
+            this.treeData.Location = new System.Drawing.Point(49, 106);
+            this.treeData.Name = "treeData";
+            this.treeData.Size = new System.Drawing.Size(728, 294);
+            this.treeData.TabIndex = 6;
+            // 
             // ID3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,11 +97,11 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(841, 474);
+            this.Controls.Add(this.treeData);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.butRegister);
             this.Controls.Add(this.butProbe);
             this.Controls.Add(this.labResult);
-            this.Controls.Add(this.textTree);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -118,11 +114,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textTree;
         private System.Windows.Forms.Label labResult;
         private System.Windows.Forms.Button butProbe;
         private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TreeView treeData;
     }
 }
