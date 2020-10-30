@@ -196,7 +196,34 @@ namespace Capstone.GUI
             numbers.Add(f5);
             return numbers;
         }
+        public List<int> numberOfVehiclesPerTrunkSize()
+        {
+            List<int> size = new List<int>();
+            int med = 0;
+            int small = 0;
+            int big = 0;
+            for (int i = 0; i < cars.Count; i++)
+            {
+                if (cars[i].Maintenace_Price.Equals("med"))
+                {
+                    small += 1;
+                }
+                if (cars[i].Maintenace_Price.Equals("big"))
+                {
+                    med += 1;
+                }
+                if (cars[i].Maintenace_Price.Equals("small"))
+                {
+                    big += 1;
+                }
+                
 
+            }
+            size.Add(small);
+            size.Add(med);
+            size.Add(big);
+            return size;
+        }
 
     }
 }
