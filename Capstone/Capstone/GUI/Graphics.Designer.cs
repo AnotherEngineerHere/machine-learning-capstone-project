@@ -102,6 +102,7 @@
             this.puntos.Legends.Add(legend3);
             this.puntos.Location = new System.Drawing.Point(12, 12);
             this.puntos.Name = "puntos";
+            this.puntos.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
             series3.Legend = "Legend1";
