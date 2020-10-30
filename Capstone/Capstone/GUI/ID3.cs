@@ -19,9 +19,13 @@ namespace Capstone.GUI
 
         public const string TREE = @"../../Data/tree.csv";
 
-        CSVFileHandler csv;
+        private CSVFileHandler csv;
 
-        Tree tree;
+        private Tree tree;
+
+        private Probe p;
+
+        private EnterSample es;
 
         DataTable data;
 
@@ -185,13 +189,13 @@ namespace Capstone.GUI
 
         private void butProbe_Click(object sender, EventArgs e)
         {
-            Probe p = new Probe(result);
+            p = new Probe(result);
             p.Show();
         }
 
         private void butRegister_Click(object sender, EventArgs e)
         {
-            EnterSample es = new EnterSample(tree);
+            es = new EnterSample(tree);
             es.Show();
         }
     }
