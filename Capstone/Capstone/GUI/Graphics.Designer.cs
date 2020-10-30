@@ -58,6 +58,7 @@
             this.barras.Legends.Add(legend1);
             this.barras.Location = new System.Drawing.Point(12, 12);
             this.barras.Name = "barras";
+            this.barras.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
@@ -69,6 +70,7 @@
             // butPastelPor
             // 
             this.butPastelPor.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.butPastelPor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butPastelPor.Location = new System.Drawing.Point(652, 29);
             this.butPastelPor.Name = "butPastelPor";
             this.butPastelPor.Size = new System.Drawing.Size(106, 23);
@@ -85,6 +87,7 @@
             this.porcentaje.Legends.Add(legend2);
             this.porcentaje.Location = new System.Drawing.Point(12, 12);
             this.porcentaje.Name = "porcentaje";
+            this.porcentaje.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series2.Legend = "Legend1";
@@ -102,6 +105,7 @@
             this.puntos.Legends.Add(legend3);
             this.puntos.Location = new System.Drawing.Point(12, 12);
             this.puntos.Name = "puntos";
+            this.puntos.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
             series3.Legend = "Legend1";
@@ -114,6 +118,7 @@
             // numberOfDoors
             // 
             this.numberOfDoors.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.numberOfDoors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numberOfDoors.Location = new System.Drawing.Point(652, 58);
             this.numberOfDoors.Name = "numberOfDoors";
             this.numberOfDoors.Size = new System.Drawing.Size(106, 23);
@@ -125,6 +130,7 @@
             // numberOfPeople
             // 
             this.numberOfPeople.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.numberOfPeople.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numberOfPeople.Location = new System.Drawing.Point(652, 87);
             this.numberOfPeople.Name = "numberOfPeople";
             this.numberOfPeople.Size = new System.Drawing.Size(106, 23);
@@ -136,6 +142,7 @@
             // trunkSize
             // 
             this.trunkSize.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.trunkSize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trunkSize.Location = new System.Drawing.Point(652, 116);
             this.trunkSize.Name = "trunkSize";
             this.trunkSize.Size = new System.Drawing.Size(106, 25);
@@ -147,6 +154,7 @@
             // PriceOfCars
             // 
             this.PriceOfCars.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.PriceOfCars.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PriceOfCars.Location = new System.Drawing.Point(652, 147);
             this.PriceOfCars.Name = "PriceOfCars";
             this.PriceOfCars.Size = new System.Drawing.Size(106, 25);

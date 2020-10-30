@@ -102,7 +102,7 @@ namespace Capstone.GUI
             int med = 0;
             int vhigh = 0;
             for (int i = 0; i < cars.Count; i++) {
-                Console.WriteLine(cars[i].Sold_Price);
+               
                 if (cars[i].Sold_Price.Equals("low")) {
                     low +=1;
                 }
