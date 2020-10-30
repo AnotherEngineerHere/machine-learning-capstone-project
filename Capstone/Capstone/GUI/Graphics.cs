@@ -117,10 +117,7 @@ namespace Capstone.GUI
                 }
             
             }
-            price.Add(low);
-            price.Add(med);
-            price.Add(high);
-            price.Add(vhigh);
+            
             return price;
         }
         public List<int> carsByMaintenancePrice()
