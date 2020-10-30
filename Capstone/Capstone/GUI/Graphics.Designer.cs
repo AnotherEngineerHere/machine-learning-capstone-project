@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> develop
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -37,14 +41,31 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+<<<<<<< HEAD
+=======
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+>>>>>>> featureGraphics
+=======
+>>>>>>> develop
             this.barras = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.butPastelPor = new System.Windows.Forms.Button();
             this.porcentaje = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.puntos = new System.Windows.Forms.DataVisualization.Charting.Chart();
+<<<<<<< HEAD
+=======
             this.numberOfDoors = new System.Windows.Forms.Button();
             this.numberOfPeople = new System.Windows.Forms.Button();
             this.trunkSize = new System.Windows.Forms.Button();
             this.PriceOfCars = new System.Windows.Forms.Button();
+>>>>>>> featureGraphics
             ((System.ComponentModel.ISupportInitialize)(this.barras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.porcentaje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.puntos)).BeginInit();
@@ -52,10 +73,31 @@
             // 
             // barras
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> develop
             chartArea1.Name = "ChartArea1";
             this.barras.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.barras.Legends.Add(legend1);
+<<<<<<< HEAD
+            this.barras.Location = new System.Drawing.Point(12, 12);
+            this.barras.Name = "barras";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.barras.Series.Add(series1);
+            this.barras.Size = new System.Drawing.Size(617, 380);
+            this.barras.TabIndex = 0;
+            this.barras.Text = "chartMarca";
+=======
+            chartArea10.Name = "ChartArea1";
+            this.barras.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.barras.Legends.Add(legend10);
+=======
+>>>>>>> develop
             this.barras.Location = new System.Drawing.Point(12, 12);
             this.barras.Name = "barras";
             this.barras.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
@@ -66,6 +108,7 @@
             this.barras.Size = new System.Drawing.Size(617, 380);
             this.barras.TabIndex = 0;
             this.barras.Text = "barras";
+>>>>>>> featureGraphics
             // 
             // butPastelPor
             // 
@@ -99,10 +142,32 @@
             // 
             // puntos
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> develop
             chartArea3.Name = "ChartArea1";
             this.puntos.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.puntos.Legends.Add(legend3);
+<<<<<<< HEAD
+            this.puntos.Location = new System.Drawing.Point(12, 12);
+            this.puntos.Name = "puntos";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.puntos.Series.Add(series3);
+            this.puntos.Size = new System.Drawing.Size(617, 380);
+            this.puntos.TabIndex = 6;
+            this.puntos.Text = "puetas";
+=======
+            chartArea12.Name = "ChartArea1";
+            this.puntos.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.puntos.Legends.Add(legend12);
+=======
+>>>>>>> develop
             this.puntos.Location = new System.Drawing.Point(12, 12);
             this.puntos.Name = "puntos";
             this.puntos.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
@@ -162,6 +227,7 @@
             this.PriceOfCars.Text = "price of cars";
             this.PriceOfCars.UseVisualStyleBackColor = false;
             this.PriceOfCars.Click += new System.EventHandler(this.PriceOfCars_Click);
+>>>>>>> featureGraphics
             // 
             // Graphics
             // 
@@ -169,10 +235,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+<<<<<<< HEAD
+=======
             this.Controls.Add(this.PriceOfCars);
             this.Controls.Add(this.trunkSize);
             this.Controls.Add(this.numberOfPeople);
             this.Controls.Add(this.numberOfDoors);
+>>>>>>> featureGraphics
             this.Controls.Add(this.puntos);
             this.Controls.Add(this.porcentaje);
             this.Controls.Add(this.butPastelPor);
@@ -192,9 +261,12 @@
         private System.Windows.Forms.Button butPastelPor;
         private System.Windows.Forms.DataVisualization.Charting.Chart porcentaje;
         private System.Windows.Forms.DataVisualization.Charting.Chart puntos;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.Button numberOfDoors;
         private System.Windows.Forms.Button numberOfPeople;
         private System.Windows.Forms.Button trunkSize;
         private System.Windows.Forms.Button PriceOfCars;
+>>>>>>> featureGraphics
     }
 }
