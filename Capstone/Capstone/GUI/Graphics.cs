@@ -75,6 +75,13 @@ namespace Capstone.GUI
 
         private void trunkSize_Click(object sender, EventArgs e)
         {
+            noShow();
+            clear();
+            barras.Series[0].Points.AddXY("small", numberOfVehiclesPerTrunkSize()[0]);
+            barras.Series[0].Points.AddXY("med", numberOfVehiclesPerTrunkSize()[1]);
+            barras.Series[0].Points.AddXY("big", numberOfVehiclesPerTrunkSize()[2]);
+
+            barras.Visible = true;
 
         }
         private void PriceOfCars_Click(object sender, EventArgs e)
@@ -223,15 +230,15 @@ namespace Capstone.GUI
             int big = 0;
             for (int i = 0; i < cars.Count; i++)
             {
-                if (cars[i].Maintenace_Price.Equals("med"))
+                if (cars[i].Lug_Boot_Size.Equals("med"))
                 {
                     small += 1;
                 }
-                if (cars[i].Maintenace_Price.Equals("big"))
+                if (cars[i].Lug_Boot_Size.Equals("big"))
                 {
                     med += 1;
                 }
-                if (cars[i].Maintenace_Price.Equals("small"))
+                if (cars[i].Lug_Boot_Size.Equals("small"))
                 {
                     big += 1;
                 }
