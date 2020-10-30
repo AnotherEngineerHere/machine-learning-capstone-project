@@ -39,11 +39,12 @@
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.barras = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.butPastelPor = new System.Windows.Forms.Button();
-            this.precioMaximo = new System.Windows.Forms.Button();
-            this.buttonPorCaros = new System.Windows.Forms.Button();
-            this.buttPuertas = new System.Windows.Forms.Button();
             this.porcentaje = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.puntos = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.numberOfDoors = new System.Windows.Forms.Button();
+            this.numberOfPeople = new System.Windows.Forms.Button();
+            this.trunkSize = new System.Windows.Forms.Button();
+            this.PriceOfCars = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.barras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.porcentaje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.puntos)).BeginInit();
@@ -75,39 +76,6 @@
             this.butPastelPor.Text = "Maintenance price";
             this.butPastelPor.UseVisualStyleBackColor = false;
             this.butPastelPor.Click += new System.EventHandler(this.butPastelPor_Click);
-            // 
-            // precioMaximo
-            // 
-            this.precioMaximo.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.precioMaximo.Location = new System.Drawing.Point(652, 58);
-            this.precioMaximo.Name = "precioMaximo";
-            this.precioMaximo.Size = new System.Drawing.Size(106, 23);
-            this.precioMaximo.TabIndex = 2;
-            this.precioMaximo.Text = "Number of doors";
-            this.precioMaximo.UseVisualStyleBackColor = false;
-            this.precioMaximo.Click += new System.EventHandler(this.precioMaximo_Click);
-            // 
-            // buttonPorCaros
-            // 
-            this.buttonPorCaros.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.buttonPorCaros.Location = new System.Drawing.Point(652, 87);
-            this.buttonPorCaros.Name = "buttonPorCaros";
-            this.buttonPorCaros.Size = new System.Drawing.Size(106, 23);
-            this.buttonPorCaros.TabIndex = 3;
-            this.buttonPorCaros.Text = "Number of people";
-            this.buttonPorCaros.UseVisualStyleBackColor = false;
-            this.buttonPorCaros.Click += new System.EventHandler(this.buttonPorCaros_Click);
-            // 
-            // buttPuertas
-            // 
-            this.buttPuertas.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.buttPuertas.Location = new System.Drawing.Point(652, 116);
-            this.buttPuertas.Name = "buttPuertas";
-            this.buttPuertas.Size = new System.Drawing.Size(106, 25);
-            this.buttPuertas.TabIndex = 4;
-            this.buttPuertas.Text = "Trunk size";
-            this.buttPuertas.UseVisualStyleBackColor = false;
-            this.buttPuertas.Click += new System.EventHandler(this.buttPuertas_Click);
             // 
             // porcentaje
             // 
@@ -143,17 +111,62 @@
             this.puntos.TabIndex = 6;
             this.puntos.Text = "puetas";
             // 
+            // numberOfDoors
+            // 
+            this.numberOfDoors.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.numberOfDoors.Location = new System.Drawing.Point(652, 58);
+            this.numberOfDoors.Name = "numberOfDoors";
+            this.numberOfDoors.Size = new System.Drawing.Size(106, 23);
+            this.numberOfDoors.TabIndex = 7;
+            this.numberOfDoors.Text = "Number of doors";
+            this.numberOfDoors.UseVisualStyleBackColor = false;
+            this.numberOfDoors.Click += new System.EventHandler(this.numberOfDoors_Click);
+            // 
+            // numberOfPeople
+            // 
+            this.numberOfPeople.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.numberOfPeople.Location = new System.Drawing.Point(652, 87);
+            this.numberOfPeople.Name = "numberOfPeople";
+            this.numberOfPeople.Size = new System.Drawing.Size(106, 23);
+            this.numberOfPeople.TabIndex = 8;
+            this.numberOfPeople.Text = "Number of people";
+            this.numberOfPeople.UseVisualStyleBackColor = false;
+            this.numberOfPeople.Click += new System.EventHandler(this.numberOfPeople_Click);
+            // 
+            // trunkSize
+            // 
+            this.trunkSize.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.trunkSize.Location = new System.Drawing.Point(652, 116);
+            this.trunkSize.Name = "trunkSize";
+            this.trunkSize.Size = new System.Drawing.Size(106, 25);
+            this.trunkSize.TabIndex = 9;
+            this.trunkSize.Text = "Trunk size";
+            this.trunkSize.UseVisualStyleBackColor = false;
+            this.trunkSize.Click += new System.EventHandler(this.trunkSize_Click);
+            // 
+            // PriceOfCars
+            // 
+            this.PriceOfCars.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.PriceOfCars.Location = new System.Drawing.Point(652, 147);
+            this.PriceOfCars.Name = "PriceOfCars";
+            this.PriceOfCars.Size = new System.Drawing.Size(106, 25);
+            this.PriceOfCars.TabIndex = 10;
+            this.PriceOfCars.Text = "price of cars";
+            this.PriceOfCars.UseVisualStyleBackColor = false;
+            this.PriceOfCars.Click += new System.EventHandler(this.PriceOfCars_Click);
+            // 
             // Graphics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PriceOfCars);
+            this.Controls.Add(this.trunkSize);
+            this.Controls.Add(this.numberOfPeople);
+            this.Controls.Add(this.numberOfDoors);
             this.Controls.Add(this.puntos);
             this.Controls.Add(this.porcentaje);
-            this.Controls.Add(this.buttPuertas);
-            this.Controls.Add(this.buttonPorCaros);
-            this.Controls.Add(this.precioMaximo);
             this.Controls.Add(this.butPastelPor);
             this.Controls.Add(this.barras);
             this.Name = "Graphics";
@@ -169,10 +182,11 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart barras;
         private System.Windows.Forms.Button butPastelPor;
-        private System.Windows.Forms.Button precioMaximo;
-        private System.Windows.Forms.Button buttonPorCaros;
-        private System.Windows.Forms.Button buttPuertas;
         private System.Windows.Forms.DataVisualization.Charting.Chart porcentaje;
         private System.Windows.Forms.DataVisualization.Charting.Chart puntos;
+        private System.Windows.Forms.Button numberOfDoors;
+        private System.Windows.Forms.Button numberOfPeople;
+        private System.Windows.Forms.Button trunkSize;
+        private System.Windows.Forms.Button PriceOfCars;
     }
 }

@@ -27,6 +27,7 @@ namespace Capstone.GUI
 
         public void CreateChart() {
             noShow();
+            clear();
             barras.Series[0].Points.AddXY("low", carSoldPrice()[0]);
             barras.Series[0].Points.AddXY("med", carSoldPrice()[1]);
             barras.Series[0].Points.AddXY("high", carSoldPrice()[2]);
@@ -38,6 +39,7 @@ namespace Capstone.GUI
         private void butPastelPor_Click(object sender, EventArgs e)
         {
             noShow();
+            clear();
             puntos.Series[0].Points.AddXY("low", carsByMaintenancePrice()[0]);
             puntos.Series[0].Points.AddXY("med", carsByMaintenancePrice()[1]);
             puntos.Series[0].Points.AddXY("high", carsByMaintenancePrice()[2]);
@@ -47,28 +49,30 @@ namespace Capstone.GUI
             
         }
 
-
-        private void precioMaximo_Click(object sender, EventArgs e)
+        private void numberOfDoors_Click(object sender, EventArgs e)
         {
             noShow();
-           
-            barras.Visible = true;
+            clear();
+            puntos.Series[0].Points.AddXY("2", numbersCarsPerNumberOfDoors()[0]);
+            puntos.Series[0].Points.AddXY("3", numbersCarsPerNumberOfDoors()[1]);
+            puntos.Series[0].Points.AddXY("4", numbersCarsPerNumberOfDoors()[2]);
+            puntos.Series[0].Points.AddXY("5", numbersCarsPerNumberOfDoors()[3]);
+
+            puntos.Visible = true;
         }
 
-        private void buttonPorCaros_Click(object sender, EventArgs e)
+        private void numberOfPeople_Click(object sender, EventArgs e)
         {
-            noShow();
-            
-            porcentaje.Visible = true;
 
         }
 
-        private void buttPuertas_Click(object sender, EventArgs e)
+        private void trunkSize_Click(object sender, EventArgs e)
         {
-            noShow();
-            
-            barras.Visible = true;
-            
+
+        }
+        private void PriceOfCars_Click(object sender, EventArgs e)
+        {
+            CreateChart();
         }
 
         public void noShow() {
@@ -233,5 +237,13 @@ namespace Capstone.GUI
             return size;
         }
 
+        private void clear()
+        {
+            puntos.Series[0].Points.Clear();
+            barras.Series[0].Points.Clear();
+            porcentaje.Series[0].Points.Clear();
+        }
+
+       
     }
 }
