@@ -1,5 +1,6 @@
 ﻿using CapstoneProject.model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,5 +69,67 @@ namespace Capstone.GUI
             chartMarca.Visible = false;
             puertas.Visible = false;
         }
+
+        public List<int> carSoldPrice() {
+            List<int> price = new List<int>();
+            int low = 0;
+            int high = 0;
+            int med = 0;
+            int vhigh = 0;
+            for (int i = 0; i < cars.Count; i++) {
+                if (cars[i].Sold_Price.Equals("low")) {
+                    low +=1;
+                }
+                if (cars[i].Sold_Price.Equals("med")) {
+                    med += 1;
+                }
+                if (cars[i].Sold_Price.Equals("high")) {
+                    high += 1;
+                }
+                if (cars[i].Sold_Price.Equals("vhigh")) {
+                    vhigh += 1;
+                }
+            
+            }
+            price.Add(low);
+            price.Add(med);
+            price.Add(high);
+            price.Add(vhigh);
+            return price;
+        }
+        public List<int> carsByMaintenancePrice()
+        {
+            List<int> price = new List<int>();
+            int low = 0;
+            int high = 0;
+            int med = 0;
+            int vhigh = 0;
+            for (int i = 0; i < cars.Count; i++)
+            {
+                if (cars[i].Sold_Price.Equals("low"))
+                {
+                    low += 1;
+                }
+                if (cars[i].Sold_Price.Equals("med"))
+                {
+                    med += 1;
+                }
+                if (cars[i].Sold_Price.Equals("high"))
+                {
+                    high += 1;
+                }
+                if (cars[i].Sold_Price.Equals("vhigh"))
+                {
+                    vhigh += 1;
+                }
+
+            }
+            price.Add(low);
+            price.Add(med);
+            price.Add(high);
+            price.Add(vhigh);
+            return price;
+        }
+
     }
 }
