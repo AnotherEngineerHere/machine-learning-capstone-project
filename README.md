@@ -29,8 +29,15 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 ## Documentation
 
-[a link](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Metodo%20de%20la%20Ingenieria.pdf)
+[Engineering method](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Metodo%20de%20la%20Ingenieria.pdf)
 
+[Funtional requirements](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Requerimientos.pdf)
+
+[Class diagram]()
+
+[Object diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/ObjectDiagram.png)
+
+[Sequence diagram]()
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
