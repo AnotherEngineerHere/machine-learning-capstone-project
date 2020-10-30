@@ -39,5 +39,8 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 [Sequence diagram]()
 
+## Notes
+Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
