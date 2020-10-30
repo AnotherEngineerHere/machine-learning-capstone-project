@@ -151,7 +151,40 @@ namespace Capstone.GUI
                 {
                     f4 += 1;
                 }
-                if (cars[i].Number_Doors.Equals("2"))
+                if (cars[i].Number_Doors.Equals("5"))
+                {
+                    f5 += 1;
+                }
+
+            }
+            numbers.Add(t2);
+            numbers.Add(t3);
+            numbers.Add(f4);
+            numbers.Add(f5);
+            return numbers;
+        }
+        public List<int> numbersCarsPerNumberOfPeople()
+        {
+            List<int> numbers = new List<int>();
+            int t2 = 0;
+            int t3 = 0;
+            int f4 = 0;
+            int f5 = 0;
+            for (int i = 0; i < cars.Count; i++)
+            {
+                if (cars[i].Number_Occupants.Equals("2"))
+                {
+                    t2 += 1;
+                }
+                if (cars[i].Number_Occupants.Equals("3"))
+                {
+                    t3 += 1;
+                }
+                if (cars[i].Number_Occupants.Equals("4"))
+                {
+                    f4 += 1;
+                }
+                if (cars[i].Number_Occupants.Equals("5"))
                 {
                     f5 += 1;
                 }
