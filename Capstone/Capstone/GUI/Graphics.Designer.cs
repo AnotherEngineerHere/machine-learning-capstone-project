@@ -37,33 +37,33 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chartMarca = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.barras = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.butPastelPor = new System.Windows.Forms.Button();
             this.precioMaximo = new System.Windows.Forms.Button();
             this.buttonPorCaros = new System.Windows.Forms.Button();
             this.buttPuertas = new System.Windows.Forms.Button();
             this.porcentaje = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.puertas = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chartMarca)).BeginInit();
+            this.puntos = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.barras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.porcentaje)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puertas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puntos)).BeginInit();
             this.SuspendLayout();
             // 
-            // chartMarca
+            // barras
             // 
             chartArea1.Name = "ChartArea1";
-            this.chartMarca.ChartAreas.Add(chartArea1);
+            this.barras.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartMarca.Legends.Add(legend1);
-            this.chartMarca.Location = new System.Drawing.Point(12, 12);
-            this.chartMarca.Name = "chartMarca";
+            this.barras.Legends.Add(legend1);
+            this.barras.Location = new System.Drawing.Point(12, 12);
+            this.barras.Name = "barras";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chartMarca.Series.Add(series1);
-            this.chartMarca.Size = new System.Drawing.Size(617, 380);
-            this.chartMarca.TabIndex = 0;
-            this.chartMarca.Text = "chartMarca";
+            this.barras.Series.Add(series1);
+            this.barras.Size = new System.Drawing.Size(617, 380);
+            this.barras.TabIndex = 0;
+            this.barras.Text = "chartMarca";
             // 
             // butPastelPor
             // 
@@ -122,22 +122,22 @@
             this.porcentaje.TabIndex = 5;
             this.porcentaje.Text = "chart1";
             // 
-            // puertas
+            // puntos
             // 
             chartArea3.Name = "ChartArea1";
-            this.puertas.ChartAreas.Add(chartArea3);
+            this.puntos.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
-            this.puertas.Legends.Add(legend3);
-            this.puertas.Location = new System.Drawing.Point(12, 12);
-            this.puertas.Name = "puertas";
+            this.puntos.Legends.Add(legend3);
+            this.puntos.Location = new System.Drawing.Point(12, 12);
+            this.puntos.Name = "puntos";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
-            this.puertas.Series.Add(series3);
-            this.puertas.Size = new System.Drawing.Size(617, 380);
-            this.puertas.TabIndex = 6;
-            this.puertas.Text = "puetas";
+            this.puntos.Series.Add(series3);
+            this.puntos.Size = new System.Drawing.Size(617, 380);
+            this.puntos.TabIndex = 6;
+            this.puntos.Text = "puetas";
             // 
             // Graphics
             // 
@@ -145,30 +145,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.puertas);
+            this.Controls.Add(this.puntos);
             this.Controls.Add(this.porcentaje);
             this.Controls.Add(this.buttPuertas);
             this.Controls.Add(this.buttonPorCaros);
             this.Controls.Add(this.precioMaximo);
             this.Controls.Add(this.butPastelPor);
-            this.Controls.Add(this.chartMarca);
+            this.Controls.Add(this.barras);
             this.Name = "Graphics";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.chartMarca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.porcentaje)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puertas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puntos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartMarca;
+        private System.Windows.Forms.DataVisualization.Charting.Chart barras;
         private System.Windows.Forms.Button butPastelPor;
         private System.Windows.Forms.Button precioMaximo;
         private System.Windows.Forms.Button buttonPorCaros;
         private System.Windows.Forms.Button buttPuertas;
         private System.Windows.Forms.DataVisualization.Charting.Chart porcentaje;
-        private System.Windows.Forms.DataVisualization.Charting.Chart puertas;
+        private System.Windows.Forms.DataVisualization.Charting.Chart puntos;
     }
 }
