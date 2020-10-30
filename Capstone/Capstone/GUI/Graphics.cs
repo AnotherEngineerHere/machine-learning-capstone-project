@@ -52,6 +52,11 @@ namespace Capstone.GUI
         private void precioMaximo_Click(object sender, EventArgs e)
         {
             noShow();
+            porcentaje.Series[0].Points.AddXY("low", carsByMaintenancePrice()[0]);
+            porcentaje.Series[0].Points.AddXY("med", carsByMaintenancePrice()[1]);
+            porcentaje.Series[0].Points.AddXY("high", carsByMaintenancePrice()[2]);
+            porcentaje.Series[0].Points.AddXY("vhigh", carsByMaintenancePrice()[3]);
+
 
             barras.Visible = true;
         }
