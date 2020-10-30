@@ -5,6 +5,13 @@ The project will be splited into three main stages:
 
 The first one is the choose of data set, after that we will set up the functional requirements, after that we will set the documentation and finally a class diagram will be done.
 
+# Description
+In recent years, the purchase of vehicles on the European continent has become something common as a result of great economic progress, and is that for example Liechtenstein, a German-speaking principality located between Austria and Switzerland, is the second country after the United States in having more vehicles per person. This phenomenon has led to the different global automotive companies finding an attractive market in these regions and, therefore, they have introduced their vehicle models. with different specifications and for different socioeconomic sectors trying to cover a part of the saturated automotive market.
+
+However, many of the proven recent survey reports indicate that different consumers have been able to identify various difficulties surrounding the above situation. In the first place, the existence of a large automotive supply causes great uncertainty when choosing a suitable vehicle, and secondly, the little information on whether the models offered are devices that are offered in optimal conditions for the end consumer.
+
+Programmers of Cydonia, a very cool engineers team has noticed this problematic. The have decided create a application to help people to choose, of a thousand of options, which car with a determined characteristics is the best option. The program will clasify the vehicle as Bad or Good according to their features.
+
 ## Contributing
 This project has only three contributors
 Please make sure to update tests as appropriate.
