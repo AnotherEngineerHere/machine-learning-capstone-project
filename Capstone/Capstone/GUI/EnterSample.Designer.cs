@@ -197,6 +197,7 @@
             // 
             // butCal
             // 
+            this.butCal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butCal.Location = new System.Drawing.Point(172, 169);
             this.butCal.Name = "butCal";
             this.butCal.Size = new System.Drawing.Size(90, 38);
