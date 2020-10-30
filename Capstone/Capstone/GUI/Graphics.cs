@@ -21,14 +21,17 @@ namespace Capstone.GUI
         {
             InitializeComponent();
             this.cars = c;
-            cantidadMax = 151 + 167 + 170 + 184 + 181 + 175 + 193 + 158 + 168;
+            noShow();
             CreateChart();
         }
 
         public void CreateChart() {
             noShow();
-            
-            chartMarca.Visible = true;
+            barras.Series[0].Points.AddXY("low", carSoldPrice()[0]);
+            barras.Series[0].Points.AddXY("med", carSoldPrice()[1]);
+            barras.Series[0].Points.AddXY("high", carSoldPrice()[2]);
+            barras.Series[0].Points.AddXY("vhigh", carSoldPrice()[3]);
+            barras.Visible = true;
         
         }
 
@@ -45,7 +48,7 @@ namespace Capstone.GUI
         {
             noShow();
            
-            chartMarca.Visible = true;
+            barras.Visible = true;
         }
 
         private void buttonPorCaros_Click(object sender, EventArgs e)
@@ -60,14 +63,14 @@ namespace Capstone.GUI
         {
             noShow();
             
-            chartMarca.Visible = true;
+            barras.Visible = true;
             
         }
 
         public void noShow() {
             porcentaje.Visible = false;
-            chartMarca.Visible = false;
-            puertas.Visible = false;
+            barras.Visible = false;
+            puntos.Visible = false;
         }
 
         public List<int> carSoldPrice() {
@@ -77,6 +80,7 @@ namespace Capstone.GUI
             int med = 0;
             int vhigh = 0;
             for (int i = 0; i < cars.Count; i++) {
+                Console.WriteLine(cars[i].Sold_Price);
                 if (cars[i].Sold_Price.Equals("low")) {
                     low +=1;
                 }
