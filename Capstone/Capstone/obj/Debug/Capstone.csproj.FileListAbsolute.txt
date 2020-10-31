@@ -75,3 +75,4 @@ D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.EnterSample.resources
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.EnterSample.resources
 C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Probe.resources
+C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
