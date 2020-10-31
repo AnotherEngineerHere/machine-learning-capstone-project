@@ -33,11 +33,15 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 [Funtional requirements](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Requerimientos.pdf)
 
-[Class diagram]()
+[Class diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Diagrama.png)
 
 [Object diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/ObjectDiagram.png)
 
-[Sequence diagram]()
+[Sequence diagram 1](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/SequenceDiagram1.png)
+
+[Sequence diagram 2](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram2.png)
+
+[Sequence diagram 3](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram3.png)
 
 ## Notes
 Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 
