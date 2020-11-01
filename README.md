@@ -1,5 +1,5 @@
-# Capstone Project
-This the capstone project from ICESI University from Capstone Project Course, during this project we will seek into the decision making trees and mining data from given open data set in the web.
+# Machine Learning Project
+During this project we will seek into the decision making trees and mining data from given open data set in the web.
 
 The project will be splited into three main stages:
 
@@ -21,7 +21,7 @@ The project will be done in C# Programming Language
 
 The Operative System will be  Windows 10
 
-The Development Environment will be Visual Studio
+The Development Environment will be Visual Studio 2019 with NET. Framework 4.7.1
 
 ## DataSet Source
 http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
