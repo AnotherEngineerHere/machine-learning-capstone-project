@@ -49,7 +49,7 @@ Most of the commits has been pushed to diferents branchs, so please check the ot
 
 ## Team Roles
 
-https://docs.google.com/document/d/1EynwXVxSo4x_9FuEXAo1Fd8ub3B_KZHy3vST4TNcAac/edit?usp=sharing
+[Roles](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Roles.pdf)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
