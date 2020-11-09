@@ -165,8 +165,7 @@ namespace DesicionTree_CapstoneProject
 
         }
 
-       
-
+      
         public void Interval_Method(int type)
         {
             string min = textMin.Text.Trim();
@@ -185,7 +184,7 @@ namespace DesicionTree_CapstoneProject
                 }
                 else
                 {
-                    MessageBox.Show("Invalido range");
+                    MessageBox.Show("Invalid range");
                 }
             }
             else

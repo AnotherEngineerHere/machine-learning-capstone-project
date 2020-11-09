@@ -27,11 +27,11 @@ namespace Capstone.GUI
 
         private EnterSample es;
 
-        DataTable data;
+        private DataTable data;
 
-        string path;
+        private string path;
 
-        string result;
+        private string result;
 
         public ID3(string path)
         {
