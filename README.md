@@ -1,5 +1,5 @@
-# Capstone Project
-This the capstone project from ICESI University from Capstone Project Course, during this project we will seek into the decision making trees and mining data from given open data set in the web.
+# Machine Learning Project
+During this project we will seek into the decision making trees and mining data from given open data set in the web.
 
 The project will be splited into three main stages:
 
@@ -21,26 +21,35 @@ The project will be done in C# Programming Language
 
 The Operative System will be  Windows 10
 
-The Development Environment will be Visual Studio
-
+The Development Environment will be Visual Studio 2019 with NET. Framework 4.7.1
 
 ## DataSet Source
 http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 ## Documentation
 
+[Video from Youtube](https://www.youtube.com/watch?v=y_zXjF8Y61U)
+
 [Engineering method](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Metodo%20de%20la%20Ingenieria.pdf)
 
 [Funtional requirements](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Requerimientos.pdf)
 
-[Class diagram]()
+[Class diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Diagrama.png)
 
 [Object diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/ObjectDiagram.png)
 
-[Sequence diagram]()
+[Sequence diagram 1](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/SequenceDiagram1.png)
+
+[Sequence diagram 2](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram2.png)
+
+[Sequence diagram 3](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram3.png)
 
 ## Notes
 Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 
+
+## Team Roles
+
+https://docs.google.com/document/d/1EynwXVxSo4x_9FuEXAo1Fd8ub3B_KZHy3vST4TNcAac/edit?usp=sharing
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
