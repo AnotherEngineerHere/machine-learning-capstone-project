@@ -47,5 +47,9 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 ## Notes
 Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 
 
+##Team Roles
+
+https://docs.google.com/document/d/1EynwXVxSo4x_9FuEXAo1Fd8ub3B_KZHy3vST4TNcAac/edit?usp=sharing
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
