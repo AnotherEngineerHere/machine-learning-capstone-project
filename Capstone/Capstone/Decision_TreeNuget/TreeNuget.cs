@@ -9,11 +9,15 @@ using Accord.Statistics.Filters;
 using Accord.Math;
 using Accord.MachineLearning.DecisionTrees.Learning;
 using Accord.Math.Optimization.Losses;
+using System.IO;
 
 namespace Capstone.Decision_TreeNuget
 {
     class TreeNuget
     {
+
+        public const string TREE = @"../../Data/nuget.csv";
+
         private string path;
 
         private DataTable data;
@@ -51,9 +55,24 @@ namespace Capstone.Decision_TreeNuget
 
             DecisionTree tree = id3learning.Learn(inputs, outputs);
 
-            double error = new ZeroOneLoss(outputs).Loss(tree.Decide(inputs));
+            string tr = tree.ToRules().ToString();
+            tr.Replace("0","bad"), tr.Replace("1", "good");
 
-            Console.WriteLine(tree.ToRules().ToString());
+            string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            List<string> s = new List<string>();
+
+            for (int i = 0; i < r.Length; i++)
+            {
+                s.Add(r[i]);
+            }
+
+            var cs = new StringBuilder();
+            foreach (var item in s)
+            {
+                var newLine = string.Format("{0}", item);
+                cs.AppendLine(newLine);
+            }
+            File.WriteAllText(TREE, cs.ToString());
 
         }
     }
