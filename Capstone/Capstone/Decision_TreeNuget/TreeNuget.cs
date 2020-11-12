@@ -66,6 +66,12 @@ namespace Capstone.Decision_TreeNuget
                 s.Add(r[i]);
             }
 
+            for (int i = 0; i < s.Count; i++)
+            {
+                string[] corrector = s[i].Split(';');
+            }
+
+
             var cs = new StringBuilder();
             foreach (var item in s)
             {
@@ -74,6 +80,51 @@ namespace Capstone.Decision_TreeNuget
             }
             File.WriteAllText(TREE, cs.ToString());
 
+        }
+
+        public static List<string> MakeTree(List<string> arRows, char sSeperator)
+        {
+            List<string> arReturnNodes = new List<string>();
+            arRows.Sort();
+            string sLastPath = "";
+            int iFolderLength = 0;
+
+            for (int iRow = 0; iRow < arRows.Count; iRow++)
+            {
+                string sRow = arRows[iRow];
+                string[] sFolders = sRow.Split(sSeperator);
+                iFolderLength = sFolders.Length;
+                string sTab = "";
+                string[] sLastFolders = sLastPath.Split(sSeperator);
+                for (int i = 0; i < iFolderLength; i++)
+                {
+                    if (i > 0)
+                    {
+                        sTab = sTab + '\t';
+                    }
+
+                    if (!sLastPath.Equals(sRow))
+                    {
+
+                        if (sLastFolders != null && sLastFolders.Length > i)
+                        {
+                            if (!sLastFolders[i].Equals(sFolders[i]))
+                            {
+                                arReturnNodes.Add(sTab + sFolders[i]);
+                                sLastFolders = null;
+                            }
+                        }
+                        else
+                        {
+                            arReturnNodes.Add(sTab + sFolders[i]);
+
+                        }
+                    }
+
+                }
+                sLastPath = sRow;
+            }
+            return arReturnNodes;
         }
     }
 }
