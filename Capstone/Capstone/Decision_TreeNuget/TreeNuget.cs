@@ -53,7 +53,8 @@ namespace Capstone.Decision_TreeNuget
 
             double error = new ZeroOneLoss(outputs).Loss(tree.Decide(inputs));
 
+            Console.WriteLine(tree.ToRules().ToString());
 
-
-    }   }
+        }
+    }
 }
