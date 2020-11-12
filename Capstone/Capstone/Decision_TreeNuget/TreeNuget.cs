@@ -56,7 +56,7 @@ namespace Capstone.Decision_TreeNuget
             DecisionTree tree = id3learning.Learn(inputs, outputs);
 
             string tr = tree.ToRules().ToString();
-            tr.Replace("0","bad"), tr.Replace("1", "good");
+            tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", "--").Replace("(","").Replace(")","");
 
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             List<string> s = new List<string>();
