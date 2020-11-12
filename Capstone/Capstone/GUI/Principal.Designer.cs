@@ -1,4 +1,4 @@
-﻿using Ical.Net;
+﻿
 
 namespace DesicionTree_CapstoneProject
 {
@@ -30,6 +30,7 @@ namespace DesicionTree_CapstoneProject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.label1 = new System.Windows.Forms.Label();
             this.labWelcome = new System.Windows.Forms.Label();
             this.butLoad = new System.Windows.Forms.Button();
@@ -46,6 +47,8 @@ namespace DesicionTree_CapstoneProject
             this.textMax = new System.Windows.Forms.TextBox();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.butGraf = new System.Windows.Forms.Button();
+            this.butTree = new System.Windows.Forms.Button();
+            this.butTreeN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +65,11 @@ namespace DesicionTree_CapstoneProject
             this.labWelcome.AutoSize = true;
             this.labWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labWelcome.Location = new System.Drawing.Point(44, 41);
+            this.labWelcome.Location = new System.Drawing.Point(34, 37);
             this.labWelcome.Name = "labWelcome";
-            this.labWelcome.Size = new System.Drawing.Size(91, 24);
+            this.labWelcome.Size = new System.Drawing.Size(347, 24);
             this.labWelcome.TabIndex = 1;
-            this.labWelcome.Text = "Welcome";
+            this.labWelcome.Text = "Welcome to the ID3 managemet system!";
             // 
             // butLoad
             // 
@@ -82,11 +85,12 @@ namespace DesicionTree_CapstoneProject
             // 
             this.dataCar.AllowUserToAddRows = false;
             this.dataCar.AllowUserToDeleteRows = false;
+            this.dataCar.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataCar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCar.Location = new System.Drawing.Point(48, 68);
+            this.dataCar.Location = new System.Drawing.Point(27, 68);
             this.dataCar.Name = "dataCar";
             this.dataCar.ReadOnly = true;
-            this.dataCar.Size = new System.Drawing.Size(690, 406);
+            this.dataCar.Size = new System.Drawing.Size(670, 390);
             this.dataCar.TabIndex = 3;
             // 
             // CategoriesCB
@@ -109,7 +113,7 @@ namespace DesicionTree_CapstoneProject
             this.labCategories.Name = "labCategories";
             this.labCategories.Size = new System.Drawing.Size(74, 16);
             this.labCategories.TabIndex = 5;
-            this.labCategories.Text = "Categorias";
+            this.labCategories.Text = "Categories";
             this.labCategories.Visible = false;
             // 
             // ComboMultiple
@@ -129,9 +133,9 @@ namespace DesicionTree_CapstoneProject
             this.labFilter.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labFilter.Location = new System.Drawing.Point(759, 133);
             this.labFilter.Name = "labFilter";
-            this.labFilter.Size = new System.Drawing.Size(148, 16);
+            this.labFilter.Size = new System.Drawing.Size(129, 16);
             this.labFilter.TabIndex = 7;
-            this.labFilter.Text = "Filtro/Busqueda/Rango";
+            this.labFilter.Text = "Filter/Search/Range";
             this.labFilter.Visible = false;
             // 
             // butAcceptar
@@ -140,7 +144,7 @@ namespace DesicionTree_CapstoneProject
             this.butAcceptar.Name = "butAcceptar";
             this.butAcceptar.Size = new System.Drawing.Size(86, 26);
             this.butAcceptar.TabIndex = 8;
-            this.butAcceptar.Text = "Aceptar";
+            this.butAcceptar.Text = "Ok";
             this.butAcceptar.UseVisualStyleBackColor = true;
             this.butAcceptar.Visible = false;
             this.butAcceptar.Click += new System.EventHandler(this.butAcceptar_Click);
@@ -198,7 +202,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // textSearch
             // 
-            this.textSearch.Location = new System.Drawing.Point(762, 163);
+            this.textSearch.Location = new System.Drawing.Point(762, 164);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(206, 20);
             this.textSearch.TabIndex = 14;
@@ -215,12 +219,38 @@ namespace DesicionTree_CapstoneProject
             this.butGraf.Visible = false;
             this.butGraf.Click += new System.EventHandler(this.butGraf_Click);
             // 
+            // butTree
+            // 
+            this.butTree.Location = new System.Drawing.Point(375, 480);
+            this.butTree.Name = "butTree";
+            this.butTree.Size = new System.Drawing.Size(103, 34);
+            this.butTree.TabIndex = 16;
+            this.butTree.Text = "ID3";
+            this.butTree.UseVisualStyleBackColor = true;
+            this.butTree.Visible = false;
+            this.butTree.Click += new System.EventHandler(this.butTree_Click);
+            // 
+            // butTreeN
+            // 
+            this.butTreeN.Location = new System.Drawing.Point(484, 480);
+            this.butTreeN.Name = "butTreeN";
+            this.butTreeN.Size = new System.Drawing.Size(103, 34);
+            this.butTreeN.TabIndex = 17;
+            this.butTreeN.Text = "ID3 Nugget";
+            this.butTreeN.UseVisualStyleBackColor = true;
+            this.butTreeN.Visible = false;
+            this.butTreeN.Click += new System.EventHandler(this.butTreeN_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1088, 542);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1061, 542);
+            this.Controls.Add(this.butTreeN);
+            this.Controls.Add(this.butTree);
             this.Controls.Add(this.butGraf);
             this.Controls.Add(this.textSearch);
             this.Controls.Add(this.textMax);
@@ -237,7 +267,11 @@ namespace DesicionTree_CapstoneProject
             this.Controls.Add(this.butLoad);
             this.Controls.Add(this.labWelcome);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).EndInit();
             this.ResumeLayout(false);
@@ -263,6 +297,8 @@ namespace DesicionTree_CapstoneProject
         private System.Windows.Forms.TextBox textMax;
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.Button butGraf;
+        private System.Windows.Forms.Button butTree;
+        private System.Windows.Forms.Button butTreeN;
     }
 }
 

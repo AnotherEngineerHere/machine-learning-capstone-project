@@ -15,9 +15,9 @@ namespace CapstoneProject.model
             Cars = new List<Car>();
         }
 
-        public void Add_Car(string brand, string sold_Price, string maintenace_Price, string number_Doors, string number_Occupants, string lug_Boot_Size, string safety_Leve)
+        public void Add_Car(string sold_Price, string maintenace_Price, string number_Doors, string number_Occupants, string lug_Boot_Size, string safety_Leve, string carF)
         {
-            Car c = new Car(brand, sold_Price, maintenace_Price, number_Doors, number_Occupants, lug_Boot_Size, safety_Leve);
+            Car c = new Car(sold_Price, maintenace_Price, number_Doors, number_Occupants, lug_Boot_Size, safety_Leve,carF);
             Cars.Add(c);
         }
 
@@ -49,26 +49,6 @@ namespace CapstoneProject.model
             return o;
         }
 
-        public List<Car> Get_SubString_For_A_Search(string search)
-        {
-            List<Car> o = new List<Car>();
-      
-
-            for (int i = 0; i < Cars.Count; i++)
-            {
-                string re = Cars[i].Brand.Trim();
-
-                if (re.Contains(search.Trim()))
-                {
-                    o.Add(Cars[i]);
-                }
-
-                if (re.Equals(search.Trim()))
-                {
-                    o.Add(Cars[i]);
-                }
-            }
-            return o;
-        }
+        
     }
 }
