@@ -76,7 +76,6 @@ C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Ca
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.xml
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.Core.xml
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Statistics.xml
-C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.EnterSample.resources
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Graphics.resources
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.ID3.resources
@@ -88,6 +87,7 @@ C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Ca
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CopyComplete
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.exe
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.pdb
+<<<<<<< HEAD
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.dll.config
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.dll
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.MachineLearning.dll
@@ -100,3 +100,6 @@ D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.Core.xml
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Statistics.xml
 D:\Documentos\C#\CapstoneProject\Cpro\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CopyComplete
+=======
+C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
+>>>>>>> master

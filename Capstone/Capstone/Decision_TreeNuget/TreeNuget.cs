@@ -16,7 +16,9 @@ namespace Capstone.Decision_TreeNuget
     class TreeNuget
     {
 
-        public const string TREE = @"../../Data/nuget.csv";
+        public const string NUGET = @"../../Data/nuget.csv";
+
+        public const string PROBE = @"../../Data/probe.csv";
 
         public const string PROBE = @"../../Data/probe.csv";
 
@@ -25,6 +27,8 @@ namespace Capstone.Decision_TreeNuget
         private DataTable data;
 
         private CSVFileHandler csv;
+
+        private DecisionTree tree;
 
         public TreeNuget(string path)
         {
@@ -52,13 +56,20 @@ namespace Capstone.Decision_TreeNuget
                 new DecisionVariable("Safety", 3)
             };
 
-            DecisionTree tree = id3learning.Learn(inputs, outputs);
+            tree = id3learning.Learn(inputs, outputs);
+           
 
+            string output = "";
             string tr = tree.ToRules().ToString();
+<<<<<<< HEAD
             tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", "--").Replace("(", "").Replace(")", "");
+=======
+            tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", ";").Replace("(","").Replace(")","");
+>>>>>>> master
 
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             List<string> s = new List<string>();
+            List<string> o = new List<string>();
 
             for (int i = 0; i < r.Length; i++)
             {
@@ -68,16 +79,29 @@ namespace Capstone.Decision_TreeNuget
             for (int i = 0; i < s.Count; i++)
             {
                 string[] corrector = s[i].Split(';');
+
+                for (int j = 1; j < corrector.Length; j++)
+                {
+                    output += corrector[j] + ";";
+                    
+                }
+
+                output += corrector[0];
+                o.Add(output);
+                output = "";
             }
 
 
             var cs = new StringBuilder();
-            foreach (var item in s)
+            foreach (var item in MakeTree(o, ';'))
             {
                 var newLine = string.Format("{0}", item);
                 cs.AppendLine(newLine);
             }
-            File.WriteAllText(TREE, cs.ToString());
+            File.WriteAllText(NUGET, cs.ToString());
+
+           
+            
 
             DataTable pb;
             pb = csv.ImportFromCsvFile(PROBE);
