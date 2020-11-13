@@ -18,6 +18,8 @@ namespace Capstone.Decision_TreeNuget
 
         public const string TREE = @"../../Data/nuget.csv";
 
+        public const string PROBE = @"../../Data/probe.csv";
+
         private string path;
 
         private DataTable data;
@@ -42,21 +44,18 @@ namespace Capstone.Decision_TreeNuget
 
             var id3learning = new ID3Learning()
             {
-
-
-                new DecisionVariable("Buying", 4), // 3 possible values (Sunny, overcast, rain)
-                new DecisionVariable("Maint", 4), // 3 possible values (Hot, mild, cool)  
-                new DecisionVariable("doors", 4), // 2 possible values (High, normal)    
-                new DecisionVariable("persons", 3),  // 2 possible values (Weak, strong) 
-                new DecisionVariable("Lug_boot", 3), // 2 possible values (High, normal)    
-                new DecisionVariable("Safety", 3)  // 2 possible values (Weak, strong)
-
+                new DecisionVariable("Buying", 4),
+                new DecisionVariable("Maint", 4),
+                new DecisionVariable("doors", 4),
+                new DecisionVariable("persons", 3),
+                new DecisionVariable("Lug_boot", 3),
+                new DecisionVariable("Safety", 3)
             };
 
             DecisionTree tree = id3learning.Learn(inputs, outputs);
 
             string tr = tree.ToRules().ToString();
-            tr.Replace("0","bad"), tr.Replace("1", "good");
+            tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", "--").Replace("(", "").Replace(")", "");
 
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             List<string> s = new List<string>();
@@ -80,6 +79,23 @@ namespace Capstone.Decision_TreeNuget
             }
             File.WriteAllText(TREE, cs.ToString());
 
+            DataTable pb;
+            pb = csv.ImportFromCsvFile(PROBE);
+            Console.WriteLine(pb.Rows.Count);
+            for (int i = 0; i < pb.Rows.Count; i++)
+            {
+                int[] query = codebook.Transform(new[,]{
+                { "Buying", pb.Rows[i].ItemArray[0].ToString() },
+                { "doors",pb.Rows[i].ItemArray[1].ToString()},
+                { "personos",pb.Rows[i].ItemArray[2].ToString()},
+                { "Lug_boot",pb.Rows[i].ItemArray[3].ToString()},
+                { "safety",pb.Rows[i].ItemArray[4].ToString()}
+                });
+                int predicted = tree.Decide(query);
+                string answer = codebook.Revert("CarType", predicted);
+
+
+            }
         }
 
         public static List<string> MakeTree(List<string> arRows, char sSeperator)
@@ -127,4 +143,5 @@ namespace Capstone.Decision_TreeNuget
             return arReturnNodes;
         }
     }
+
 }
