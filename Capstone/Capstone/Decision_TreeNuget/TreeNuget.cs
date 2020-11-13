@@ -18,6 +18,8 @@ namespace Capstone.Decision_TreeNuget
 
         public const string NUGET = @"../../Data/nuget.csv";
 
+        public const string PROBE = @"../../Data/probe.csv";
+
         private string path;
 
         private DataTable data;
@@ -56,6 +58,7 @@ namespace Capstone.Decision_TreeNuget
             };
 
             tree = id3learning.Learn(inputs, outputs);
+           
 
             string output = "";
             string tr = tree.ToRules().ToString();
@@ -93,6 +96,9 @@ namespace Capstone.Decision_TreeNuget
                 cs.AppendLine(newLine);
             }
             File.WriteAllText(NUGET, cs.ToString());
+
+           
+            
 
         }
 

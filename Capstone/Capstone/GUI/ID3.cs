@@ -85,7 +85,7 @@ namespace Capstone.GUI
             string[] lines = File.ReadAllLines(PATH);
 
 
-            for (int i = 0; i < lines.Length; i++)
+            for (int i = 1; i < lines.Length; i++)
             {
                 valuesForQuery.Clear();
                 string[] celdas = lines[i].Split(';');
