@@ -34,6 +34,9 @@
             this.butRegister = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.treeData = new System.Windows.Forms.TreeView();
+            this.radID3 = new System.Windows.Forms.RadioButton();
+            this.radID3N = new System.Windows.Forms.RadioButton();
+            this.butShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labResult
@@ -50,7 +53,7 @@
             // 
             // butProbe
             // 
-            this.butProbe.Location = new System.Drawing.Point(38, 419);
+            this.butProbe.Location = new System.Drawing.Point(38, 390);
             this.butProbe.Name = "butProbe";
             this.butProbe.Size = new System.Drawing.Size(106, 32);
             this.butProbe.TabIndex = 3;
@@ -61,7 +64,7 @@
             // 
             // butRegister
             // 
-            this.butRegister.Location = new System.Drawing.Point(150, 419);
+            this.butRegister.Location = new System.Drawing.Point(150, 390);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(106, 32);
             this.butRegister.TabIndex = 4;
@@ -76,7 +79,7 @@
             this.label1.BackColor = System.Drawing.Color.SlateGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(100, 66);
+            this.label1.Location = new System.Drawing.Point(62, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(646, 21);
             this.label1.TabIndex = 5;
@@ -85,10 +88,48 @@
             // 
             // treeData
             // 
-            this.treeData.Location = new System.Drawing.Point(49, 106);
+            this.treeData.Location = new System.Drawing.Point(27, 90);
             this.treeData.Name = "treeData";
             this.treeData.Size = new System.Drawing.Size(728, 294);
             this.treeData.TabIndex = 6;
+            // 
+            // radID3
+            // 
+            this.radID3.AutoSize = true;
+            this.radID3.BackColor = System.Drawing.Color.Transparent;
+            this.radID3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radID3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radID3.Location = new System.Drawing.Point(767, 112);
+            this.radID3.Name = "radID3";
+            this.radID3.Size = new System.Drawing.Size(142, 24);
+            this.radID3.TabIndex = 7;
+            this.radID3.TabStop = true;
+            this.radID3.Text = "ID3 with blood";
+            this.radID3.UseVisualStyleBackColor = false;
+            // 
+            // radID3N
+            // 
+            this.radID3N.AutoSize = true;
+            this.radID3N.BackColor = System.Drawing.Color.Transparent;
+            this.radID3N.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radID3N.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radID3N.Location = new System.Drawing.Point(767, 142);
+            this.radID3N.Name = "radID3N";
+            this.radID3N.Size = new System.Drawing.Size(117, 24);
+            this.radID3N.TabIndex = 8;
+            this.radID3N.TabStop = true;
+            this.radID3N.Text = "ID3 Accord";
+            this.radID3N.UseVisualStyleBackColor = false;
+            // 
+            // butShow
+            // 
+            this.butShow.Location = new System.Drawing.Point(761, 172);
+            this.butShow.Name = "butShow";
+            this.butShow.Size = new System.Drawing.Size(106, 32);
+            this.butShow.TabIndex = 9;
+            this.butShow.Text = "Show";
+            this.butShow.UseVisualStyleBackColor = true;
+            this.butShow.Click += new System.EventHandler(this.butShow_Click);
             // 
             // ID3
             // 
@@ -96,7 +137,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(841, 474);
+            this.ClientSize = new System.Drawing.Size(943, 464);
+            this.Controls.Add(this.butShow);
+            this.Controls.Add(this.radID3N);
+            this.Controls.Add(this.radID3);
             this.Controls.Add(this.treeData);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.butRegister);
@@ -119,5 +163,8 @@
         private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TreeView treeData;
+        private System.Windows.Forms.RadioButton radID3;
+        private System.Windows.Forms.RadioButton radID3N;
+        private System.Windows.Forms.Button butShow;
     }
 }

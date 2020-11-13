@@ -225,7 +225,7 @@ namespace DesicionTree_CapstoneProject
             this.butTree.Name = "butTree";
             this.butTree.Size = new System.Drawing.Size(103, 34);
             this.butTree.TabIndex = 16;
-            this.butTree.Text = "ID3";
+            this.butTree.Text = "ID3-ID3 Accord";
             this.butTree.UseVisualStyleBackColor = true;
             this.butTree.Visible = false;
             this.butTree.Click += new System.EventHandler(this.butTree_Click);

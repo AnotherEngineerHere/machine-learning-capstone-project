@@ -19,6 +19,8 @@ namespace Capstone.GUI
 
         public const string TREE = @"../../Data/tree.csv";
 
+        public const string NUGET = @"../../Data/nuget.csv";
+
         private CSVFileHandler csv;
 
         private Tree tree;
@@ -41,6 +43,8 @@ namespace Capstone.GUI
             InitializeComponent();
             CreateTree();
             ProbeTree();
+            radID3.Checked = true;
+          
             LoadTreeViewFromFile(TREE);
         }
 
@@ -51,8 +55,8 @@ namespace Capstone.GUI
           
             tree.Print(tree.Root, tree.Root.Name.ToUpper());
             string tr = tree.Visual;
-           
 
+            
            
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             List<string> s = new List<string>();
@@ -197,6 +201,18 @@ namespace Capstone.GUI
         {
             es = new EnterSample(tree);
             es.Show();
+        }
+
+        private void butShow_Click(object sender, EventArgs e)
+        {
+            if (radID3.Checked == true)
+            {
+                LoadTreeViewFromFile(TREE);
+            }
+            else
+            {
+                LoadTreeViewFromFile(NUGET);
+            }
         }
     }
 }
