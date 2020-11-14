@@ -84,5 +84,10 @@ namespace Capstone.GUI
         {
             CalculateAOutput();
         }
+
+        private void EnterSample_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

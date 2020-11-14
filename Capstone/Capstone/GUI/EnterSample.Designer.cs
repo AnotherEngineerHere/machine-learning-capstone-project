@@ -58,6 +58,7 @@
             // 
             // SafetyCB
             // 
+            this.SafetyCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SafetyCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SafetyCB.FormattingEnabled = true;
             this.SafetyCB.Location = new System.Drawing.Point(25, 370);
@@ -77,6 +78,7 @@
             // 
             // DoorsCB
             // 
+            this.DoorsCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoorsCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DoorsCB.FormattingEnabled = true;
             this.DoorsCB.Location = new System.Drawing.Point(25, 186);
@@ -167,6 +169,7 @@
             // 
             // PersonsCB
             // 
+            this.PersonsCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PersonsCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PersonsCB.FormattingEnabled = true;
             this.PersonsCB.Location = new System.Drawing.Point(25, 248);
@@ -237,6 +240,7 @@
             this.Name = "EnterSample";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EnterSample";
+            this.Load += new System.EventHandler(this.EnterSample_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
