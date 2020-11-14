@@ -48,6 +48,7 @@
             // 
             // BuyingCB
             // 
+            this.BuyingCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuyingCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.BuyingCB.FormattingEnabled = true;
             this.BuyingCB.Location = new System.Drawing.Point(25, 61);
@@ -66,6 +67,7 @@
             // 
             // LugBootCB
             // 
+            this.LugBootCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LugBootCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LugBootCB.FormattingEnabled = true;
             this.LugBootCB.Location = new System.Drawing.Point(25, 308);
@@ -84,6 +86,7 @@
             // 
             // MaintCB
             // 
+            this.MaintCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaintCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.MaintCB.FormattingEnabled = true;
             this.MaintCB.Location = new System.Drawing.Point(25, 126);
