@@ -95,6 +95,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // CategoriesCB
             // 
+            this.CategoriesCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CategoriesCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriesCB.FormattingEnabled = true;
             this.CategoriesCB.Location = new System.Drawing.Point(762, 87);
