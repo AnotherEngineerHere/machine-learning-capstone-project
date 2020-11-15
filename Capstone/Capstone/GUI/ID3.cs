@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capstone.Decision_TreeNuget;
 
 
 namespace Capstone.GUI
@@ -20,6 +21,8 @@ namespace Capstone.GUI
         public const string TREE = @"../../Data/tree.csv";
 
         public const string NUGET = @"../../Data/nuget.csv";
+
+        public const string TRAIN = @"../../Data/training.csv";
 
         private CSVFileHandler csv;
 
@@ -35,29 +38,31 @@ namespace Capstone.GUI
 
         private string result;
 
+        private TreeNuget tn;
+
         public ID3(string path)
         {
             this.path = path;
             csv = new CSVFileHandler();
             tree = new Tree();
+            tn = new TreeNuget(TRAIN);
             InitializeComponent();
             CreateTree();
             ProbeTree();
             radID3.Checked = true;
-          
             LoadTreeViewFromFile(TREE);
         }
 
-        public void CreateTree() 
+        public void CreateTree()
         {
             data = csv.ImportFromCsvFile(path);
             tree.Root = tree.Learn(data, "");
-          
+
             tree.Print(tree.Root, tree.Root.Name.ToUpper());
             string tr = tree.Visual;
 
-            
-           
+
+
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             List<string> s = new List<string>();
 
@@ -67,19 +72,19 @@ namespace Capstone.GUI
             }
 
             var cs = new StringBuilder();
-            foreach (var item in MakeTree(s,';'))
+            foreach (var item in MakeTree(s, ';'))
             {
                 var newLine = string.Format("{0}", item);
                 cs.AppendLine(newLine);
             }
             File.WriteAllText(TREE, cs.ToString());
 
-           
+
         }
 
         public void ProbeTree()
         {
-            
+
             var valuesForQuery = new Dictionary<string, string>();
 
             string[] lines = File.ReadAllLines(PATH);
@@ -106,7 +111,7 @@ namespace Capstone.GUI
 
                 var result = tree.CalculateResult(tree.Root, valuesForQuery, "");
 
-                
+
                 this.result += result;
                 this.result += "\r\n";
 
@@ -167,7 +172,7 @@ namespace Capstone.GUI
             string file_contents = File.ReadAllText(file_name);
 
             // Break the file into lines.
-            string[] lines = file_contents.Split(new char[] { '\r', '\n' },StringSplitOptions.RemoveEmptyEntries);
+            string[] lines = file_contents.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
             // Process the lines.
             treeData.Nodes.Clear();
@@ -176,14 +181,14 @@ namespace Capstone.GUI
             foreach (string text_line in lines)
             {
                 // See how many tabs are at the start of the line.
-                int level = text_line.Length -text_line.TrimStart('\t').Length;
+                int level = text_line.Length - text_line.TrimStart('\t').Length;
 
                 // Add the new node.
                 if (level == 0)
                     parents[level] = treeData.Nodes.Add(text_line.Trim());
                 else
                     parents[level] = parents[level - 1].Nodes.Add(text_line.Trim());
-                
+
                 parents[level].EnsureVisible();
             }
 
@@ -197,11 +202,20 @@ namespace Capstone.GUI
             p.Show();
         }
 
+        private void butAccord_Click(object sender, EventArgs e)
+        {
+            string r = tn.GetResult();
+            p = new Probe(r);
+            p.Show();
+        }
+
         private void butRegister_Click(object sender, EventArgs e)
         {
-            es = new EnterSample(tree);
+            es = new EnterSample(tree, tn);
             es.Show();
         }
+
+        
 
         private void butShow_Click(object sender, EventArgs e)
         {
@@ -214,6 +228,8 @@ namespace Capstone.GUI
                 LoadTreeViewFromFile(NUGET);
             }
         }
+
+        
     }
 }
 

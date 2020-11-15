@@ -25,6 +25,7 @@ namespace Capstone.GUI
             InitializeComponent();
             CreateTable();
             CreateTree();
+           
         }
 
         public void CreateTable()
@@ -42,7 +43,7 @@ namespace Capstone.GUI
 
             string[] lineas = File.ReadAllLines(PATH);
 
-            for (int i = 0; i < lineas.Length; i++)
+            for (int i = 1; i < lineas.Length; i++)
             {
                 string[] celdas = lineas[i].Split(';');
 
@@ -66,6 +67,6 @@ namespace Capstone.GUI
             textProbe.ReadOnly = true;
         }
 
-
+    
     }
 }
