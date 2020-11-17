@@ -218,7 +218,7 @@ namespace Capstone.Decision_TreeNuget
                 {
                     if (i > 0)
                     {
-                        sTab = sTab + '\t';
+                        sTab = sTab + '';
                     }
 
                     if (!sLastPath.Equals(sRow))
