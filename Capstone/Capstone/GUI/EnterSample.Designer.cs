@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labOu = new System.Windows.Forms.Label();
             this.butCal = new System.Windows.Forms.Button();
+            this.butAcc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BuyingCB
@@ -199,11 +200,21 @@
             // 
             this.butCal.Location = new System.Drawing.Point(172, 169);
             this.butCal.Name = "butCal";
-            this.butCal.Size = new System.Drawing.Size(90, 38);
+            this.butCal.Size = new System.Drawing.Size(107, 38);
             this.butCal.TabIndex = 15;
-            this.butCal.Text = "Calculate";
+            this.butCal.Text = "Calculate Blood";
             this.butCal.UseVisualStyleBackColor = true;
             this.butCal.Click += new System.EventHandler(this.butCal_Click);
+            // 
+            // butAcc
+            // 
+            this.butAcc.Location = new System.Drawing.Point(285, 169);
+            this.butAcc.Name = "butAcc";
+            this.butAcc.Size = new System.Drawing.Size(105, 38);
+            this.butAcc.TabIndex = 16;
+            this.butAcc.Text = "Calculate Accord";
+            this.butAcc.UseVisualStyleBackColor = true;
+            this.butAcc.Click += new System.EventHandler(this.butAcc_Click);
             // 
             // EnterSample
             // 
@@ -213,6 +224,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(892, 450);
+            this.Controls.Add(this.butAcc);
             this.Controls.Add(this.butCal);
             this.Controls.Add(this.labOu);
             this.Controls.Add(this.label1);
@@ -255,5 +267,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labOu;
         private System.Windows.Forms.Button butCal;
+        private System.Windows.Forms.Button butAcc;
     }
 }

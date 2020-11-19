@@ -1,199 +1,199 @@
-Buying
+BUYING
 	0
-		0
+		BAD
 	1
-		Safety
+		SAFETY
 			0
-				Maint
+				MAINT
 					0
-						0
+						BAD
 					1
-						Lug_boot
+						LUG_BOOT
 							0
-								doors
+								DOORS
 									0
-										0
+										BAD
 									1
-										1
+										GOOD
 									2
-										persons
+										PERSONS
 											0
-												0
+												BAD
 											1
-												1
+												GOOD
 							1
-								persons
+								PERSONS
 									0
-										0
+										BAD
 									1
-										1
+										GOOD
 									2
-										1
+										GOOD
 							2
-								0
+								BAD
 					2
-						Lug_boot
+						LUG_BOOT
 							0
-								doors
+								DOORS
 									0
-										0
+										BAD
 									1
-										1
+										GOOD
 									2
-										1
+										GOOD
 									3
-										0
+										BAD
 							1
-								persons
+								PERSONS
 									0
-										0
+										BAD
 									1
-										1
+										GOOD
 									2
-										1
+										GOOD
 							2
-								0
+								BAD
 					3
-						0
+						BAD
 			1
-				0
+				BAD
 			2
-				persons
+				PERSONS
 					0
-						0
+						BAD
 					1
-						Maint
+						MAINT
 							0
-								0
+								BAD
 							1
-								1
+								GOOD
 							2
-								1
+								GOOD
 							3
-								Lug_boot
+								LUG_BOOT
 									0
-										doors
+										DOORS
 											1
-												1
+												GOOD
 											3
-												0
+												BAD
 									1
-										1
+										GOOD
 									2
-										0
+										BAD
 					2
-						Maint
+						MAINT
 							0
-								0
+								BAD
 							1
-								doors
+								DOORS
 									0
-										Lug_boot
+										LUG_BOOT
 											0
-												1
+												GOOD
 											2
-												0
+												BAD
 									1
-										1
+										GOOD
 									2
-										1
+										GOOD
 									3
-										1
+										GOOD
 							2
-								doors
+								DOORS
 									0
-										Lug_boot
+										LUG_BOOT
 											1
-												1
+												GOOD
 											2
-												0
+												BAD
 									1
-										1
+										GOOD
 									2
-										1
+										GOOD
 									3
-										1
+										GOOD
 							3
-								Lug_boot
+								LUG_BOOT
 									0
-										1
+										GOOD
 									1
-										1
+										GOOD
 									2
-										0
+										BAD
 	2
-		0
+		BAD
 	3
-		Maint
+		MAINT
 			0
-				0
+				BAD
 			1
-				Safety
+				SAFETY
 					0
-						0
+						BAD
 					1
-						0
+						BAD
 					2
-						Lug_boot
+						LUG_BOOT
 							0
-								persons
+								PERSONS
 									0
-										0
+										BAD
 									1
-										doors
+										DOORS
 											2
-												1
+												GOOD
 											3
-												0
+												BAD
 									2
-										doors
+										DOORS
 											0
-												0
+												BAD
 											2
-												1
+												GOOD
 											3
-												1
+												GOOD
 							1
-								persons
+								PERSONS
 									0
-										0
+										BAD
 									1
-										1
+										GOOD
 									2
-										1
+										GOOD
 							2
-								0
+								BAD
 			2
-				Safety
+				SAFETY
 					0
-						Lug_boot
+						LUG_BOOT
 							0
-								persons
+								PERSONS
 									0
-										0
+										BAD
 									1
-										1
+										GOOD
 									2
-										doors
+										DOORS
 											0
-												0
+												BAD
 											1
-												1
+												GOOD
 											2
-												1
+												GOOD
 							1
-								1
+								GOOD
 							2
-								0
+								BAD
 					1
-						0
+						BAD
 					2
-						persons
+						PERSONS
 							0
-								0
+								BAD
 							1
-								1
+								GOOD
 							2
-								1
+								GOOD
 			3
-				0
+				BAD

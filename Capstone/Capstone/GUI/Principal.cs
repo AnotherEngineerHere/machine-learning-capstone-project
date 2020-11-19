@@ -26,7 +26,7 @@ namespace DesicionTree_CapstoneProject
 
         private ID3 id3;
 
-        DataSet ds;
+        private DataSet ds;
 
         string[] _categories = { "Buying", "Maintenance","Doors","Persons","Lug_Boot","Safety" };
 
@@ -92,7 +92,7 @@ namespace DesicionTree_CapstoneProject
             CategoriesCB.Visible = true;
             butGraf.Visible = true;
             butTree.Visible = true;
-            butTreeN.Visible = true;
+         
         }
 
         private void Fill_Table(List<Car> list)
@@ -310,10 +310,6 @@ namespace DesicionTree_CapstoneProject
             
         }
 
-        private void butTreeN_Click(object sender, EventArgs e)
-        {
-            TreeNuget tn = new TreeNuget(PATH);
-            tn.CreateTree();
-        }
+     
     }
 }

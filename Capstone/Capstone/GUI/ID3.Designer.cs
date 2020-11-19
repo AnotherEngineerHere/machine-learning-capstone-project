@@ -37,6 +37,7 @@
             this.radID3 = new System.Windows.Forms.RadioButton();
             this.radID3N = new System.Windows.Forms.RadioButton();
             this.butShow = new System.Windows.Forms.Button();
+            this.butAccord = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labResult
@@ -57,18 +58,18 @@
             this.butProbe.Name = "butProbe";
             this.butProbe.Size = new System.Drawing.Size(106, 32);
             this.butProbe.TabIndex = 3;
-            this.butProbe.Text = "Probe ID3";
+            this.butProbe.Text = "Probe ID3-Blood";
             this.butProbe.UseVisualStyleBackColor = true;
             this.butProbe.Visible = false;
             this.butProbe.Click += new System.EventHandler(this.butProbe_Click);
             // 
             // butRegister
             // 
-            this.butRegister.Location = new System.Drawing.Point(150, 390);
+            this.butRegister.Location = new System.Drawing.Point(262, 390);
             this.butRegister.Name = "butRegister";
-            this.butRegister.Size = new System.Drawing.Size(106, 32);
+            this.butRegister.Size = new System.Drawing.Size(127, 32);
             this.butRegister.TabIndex = 4;
-            this.butRegister.Text = "Enter a Example";
+            this.butRegister.Text = "Enter A Example(B-A)";
             this.butRegister.UseVisualStyleBackColor = true;
             this.butRegister.Visible = false;
             this.butRegister.Click += new System.EventHandler(this.butRegister_Click);
@@ -131,6 +132,16 @@
             this.butShow.UseVisualStyleBackColor = true;
             this.butShow.Click += new System.EventHandler(this.butShow_Click);
             // 
+            // butAccord
+            // 
+            this.butAccord.Location = new System.Drawing.Point(150, 390);
+            this.butAccord.Name = "butAccord";
+            this.butAccord.Size = new System.Drawing.Size(106, 32);
+            this.butAccord.TabIndex = 10;
+            this.butAccord.Text = "Probe ID3-Acoord";
+            this.butAccord.UseVisualStyleBackColor = true;
+            this.butAccord.Click += new System.EventHandler(this.butAccord_Click);
+            // 
             // ID3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +149,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(943, 464);
+            this.Controls.Add(this.butAccord);
             this.Controls.Add(this.butShow);
             this.Controls.Add(this.radID3N);
             this.Controls.Add(this.radID3);
@@ -166,5 +178,6 @@
         private System.Windows.Forms.RadioButton radID3;
         private System.Windows.Forms.RadioButton radID3N;
         private System.Windows.Forms.Button butShow;
+        private System.Windows.Forms.Button butAccord;
     }
 }

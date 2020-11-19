@@ -13,7 +13,7 @@ using System.IO;
 
 namespace Capstone.Decision_TreeNuget
 {
-    class TreeNuget
+    public class TreeNuget
     {
 
         public const string NUGET = @"../../Data/nuget.csv";
@@ -24,21 +24,35 @@ namespace Capstone.Decision_TreeNuget
 
         private DataTable data;
 
+        private DataTable pb;
+
         private CSVFileHandler csv;
 
         private DecisionTree tree;
+
+        private string result;
+
+        private Codification codebook;
 
         public TreeNuget(string path)
         {
             this.path = path;
             csv = new CSVFileHandler();
+            CreateTree();
+            result = "";
+        }
+
+        public string GetResult()
+        {
+            Probe();
+            return result;
         }
 
         public void CreateTree()
         {
             data = csv.ImportFromCsvFile(path);
 
-            var codebook = new Codification(data);
+            codebook = new Codification(data);
 
             DataTable symbols = codebook.Apply(data);
             int[][] inputs = symbols.ToJagged<int>("Buying", "Maint", "doors", "persons", "Lug_boot", "Safety");
@@ -63,6 +77,7 @@ namespace Capstone.Decision_TreeNuget
             string output = "";
             string tr = tree.ToRules().ToString();
             tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", ";").Replace("(","").Replace(")","");
+            tr = tr.Replace("Buying", "BUYING").Replace("Maint", "MAINT").Replace("doors", "DOORS").Replace("persons", "PERSONS").Replace("Lug_boot", "LUG_BOOT").Replace("Safety", "SAFETY");
 
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             List<string> s = new List<string>();
@@ -82,24 +97,107 @@ namespace Capstone.Decision_TreeNuget
                     output += corrector[j] + ";";
                     
                 }
-
-                output += corrector[0];
+                if (corrector[0].Equals("0"))
+                {
+                    output += "BAD";
+                }
+                else
+                {
+                    output += "GOOD";
+                }
+                
                 o.Add(output);
                 output = "";
             }
 
+            
 
             var cs = new StringBuilder();
-            foreach (var item in MakeTree(o, ';'))
+            foreach (var item in MakeTree(o,';'))
             {
                 var newLine = string.Format("{0}", item);
                 cs.AppendLine(newLine);
             }
-            File.WriteAllText(NUGET, cs.ToString());
+            File.WriteAllText(NUGET, cs.ToString());    
 
-           
+        }
+
+
+        public void Probe()
+        {
+            pb = csv.ImportFromCsvFile(PROBE);
+            for (int i = 0; i < pb.Rows.Count; i++)
+            {
+                int[] query = codebook.Transform(new[,]
+                {
+                    { "Buying", pb.Rows[i].ItemArray[0].ToString() },
+                    { "Maint", pb.Rows[i].ItemArray[1].ToString() },
+                    { "doors", pb.Rows[i].ItemArray[2].ToString() },
+                    { "persons", pb.Rows[i].ItemArray[3].ToString()},
+                    { "Lug_boot", pb.Rows[i].ItemArray[4].ToString() },
+                    { "Safety", pb.Rows[i].ItemArray[5].ToString()}
+                });
+
+
+                int predicted = tree.Decide(query);
+                if (predicted != -1)
+                {
+                    string answer = codebook.Revert("CarType", predicted);
+                    result += "BUYING--" + pb.Rows[i].ItemArray[0].ToString() + "-->" + "MAINT--" + pb.Rows[i].ItemArray[1].ToString() + "-->" + "DOORS--"
+                        + pb.Rows[i].ItemArray[2].ToString() + "-->" + "PERSONS--" + pb.Rows[i].ItemArray[3].ToString() + "-->" + "LUG_BOOT--" + pb.Rows[i].ItemArray[4].ToString() + "-->" + "SAFETY--" + pb.Rows[i].ItemArray[4].ToString() + "-->" + answer.ToUpper();
+                    result += "\r\n";
+
+                }
+                else
+                {
+                    result += "BUYING--" + pb.Rows[i].ItemArray[0].ToString() + "-->" + "MAINT--" + pb.Rows[i].ItemArray[1].ToString() + "-->" + "DOORS--"
+                        + pb.Rows[i].ItemArray[2].ToString() + "-->" + "PERSONS--" + pb.Rows[i].ItemArray[3].ToString() + "-->" + "LUG_BOOT--" + pb.Rows[i].ItemArray[4].ToString() + "-->" + "SAFETY--" + pb.Rows[i].ItemArray[4].ToString() + "-->" + "Not Answer Found";
+                    result += "\r\n";
+                }
+
+            }
+            
+        }
+
+        public string Example(string buying, string maint,string doors, string persons, string lug, string safety)
+        {
+            string outp = "";
+            try
+            {
+                int[] query = codebook.Transform(new[,]
+               {
+                    { "Buying", buying },
+                    { "Maint", maint },
+                    { "doors", doors },
+                    { "persons", persons},
+                    { "Lug_boot", lug },
+                    { "Safety", safety }
+            });
+                int predicted = tree.Decide(query);
+
+                if (predicted != -1)
+                {
+                    string answer = codebook.Revert("CarType", predicted);
+                    outp += "BUYING--" + buying + "-->" + "MAINT--" + maint + "-->" + "DOORS--"
+                        + doors + "-->" + "PERSONS--" + persons + "-->" + "LUG_BOOT--" + lug + "-->" + "SAFETY--" + safety + "-->" + answer.ToUpper();
+                    outp += "\r\n";
+
+                }
+                else
+                {
+                    string answer = codebook.Revert("CarType", predicted);
+                    outp += "BUYING--" + buying + "-->" + "MAINT--" + maint + "-->" + "DOORS--"
+                        + doors + "-->" + "PERSONS--" + persons + "-->" + "LUG_BOOT--" + lug + "-->" + "SAFETY--" + safety + "-->" + "Not Answer Found";
+                    outp += "\r\n";
+                }
+            }
+            catch(Exception e)
+            {
+                outp += "Can't caluclate outcome. Na valid route through the tree was found";
+            }
             
 
+            return outp;
         }
 
         public static List<string> MakeTree(List<string> arRows, char sSeperator)
@@ -146,5 +244,7 @@ namespace Capstone.Decision_TreeNuget
             }
             return arReturnNodes;
         }
+
+        
     }
 }

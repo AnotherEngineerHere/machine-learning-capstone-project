@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Capstone.Decision_Tree;
+using Capstone.Decision_TreeNuget;
 
 namespace Capstone.GUI
 {
@@ -17,6 +18,8 @@ namespace Capstone.GUI
     {
         Tree tree;
 
+        TreeNuget tn;
+
         string[] buying = { "vhigh","high","med","low"};
         string[] maint = { "vhigh", "high", "med","low" };
         string[] doors = { "2","3","4","5" };
@@ -25,7 +28,7 @@ namespace Capstone.GUI
         string[] safety = {"low","med","high"};
 
 
-        public EnterSample(Tree t)
+        public EnterSample(Tree t, TreeNuget tn)
         {
             InitializeComponent();
             Fill(buying,BuyingCB);
@@ -36,6 +39,7 @@ namespace Capstone.GUI
             Fill(safety,SafetyCB);
 
             this.tree = t;
+            this.tn = tn;
             
         }
 
@@ -80,9 +84,28 @@ namespace Capstone.GUI
 
         }
 
+        public void CalculateAOutputAccord()
+        {
+            string buying = BuyingCB.Text;
+            string maint = MaintCB.Text;
+            string doors = DoorsCB.Text;
+            string persons = PersonsCB.Text;
+            string lug_boot = LugBootCB.Text;
+            string safety = SafetyCB.Text;
+
+            string output = tn.Example(buying,maint,doors,persons,lug_boot,safety);
+
+            textSample.Text = output;
+        }
+
         private void butCal_Click(object sender, EventArgs e)
         {
             CalculateAOutput();
+        }
+
+        private void butAcc_Click(object sender, EventArgs e)
+        {
+            CalculateAOutputAccord();
         }
     }
 }

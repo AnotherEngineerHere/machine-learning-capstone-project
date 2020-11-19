@@ -39,20 +39,20 @@
             // dataProbe
             // 
             this.dataProbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataProbe.Location = new System.Drawing.Point(62, 46);
+            this.dataProbe.Location = new System.Drawing.Point(114, 46);
             this.dataProbe.Name = "dataProbe";
-            this.dataProbe.Size = new System.Drawing.Size(654, 212);
+            this.dataProbe.Size = new System.Drawing.Size(661, 212);
             this.dataProbe.TabIndex = 0;
             // 
             // textProbe
             // 
             this.textProbe.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textProbe.ForeColor = System.Drawing.Color.Aquamarine;
-            this.textProbe.Location = new System.Drawing.Point(75, 288);
+            this.textProbe.Location = new System.Drawing.Point(97, 288);
             this.textProbe.Multiline = true;
             this.textProbe.Name = "textProbe";
             this.textProbe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textProbe.Size = new System.Drawing.Size(621, 124);
+            this.textProbe.Size = new System.Drawing.Size(703, 184);
             this.textProbe.TabIndex = 1;
             // 
             // labIn
@@ -61,7 +61,7 @@
             this.labIn.BackColor = System.Drawing.Color.Transparent;
             this.labIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labIn.Location = new System.Drawing.Point(71, 9);
+            this.labIn.Location = new System.Drawing.Point(394, 9);
             this.labIn.Name = "labIn";
             this.labIn.Size = new System.Drawing.Size(107, 24);
             this.labIn.TabIndex = 2;
@@ -73,7 +73,7 @@
             this.labOu.BackColor = System.Drawing.Color.Transparent;
             this.labOu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labOu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labOu.Location = new System.Drawing.Point(348, 261);
+            this.labOu.Location = new System.Drawing.Point(420, 261);
             this.labOu.Name = "labOu";
             this.labOu.Size = new System.Drawing.Size(66, 24);
             this.labOu.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(884, 495);
             this.Controls.Add(this.labOu);
             this.Controls.Add(this.labIn);
             this.Controls.Add(this.textProbe);
