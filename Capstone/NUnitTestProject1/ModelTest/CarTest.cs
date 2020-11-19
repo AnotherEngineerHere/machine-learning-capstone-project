@@ -31,5 +31,29 @@ namespace NUnitTestProject1
 
             Assert.AreEqual("2", c1.Number_Doors);
         }
+        public void numberOccupantsTest()
+        {
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("2", c1.Number_Occupants);
+        }
+        public void lugBootSizeTest()
+        {
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("med", c1.Lug_Boot_Size);
+        }
+        public void safetyLevelTest()
+        {
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("med", c1.Safety_Level);
+        }
+        public void carFTest()
+        {
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("bad", c1.CarF);
+        }
     }
 }
