@@ -25,5 +25,11 @@ namespace NUnitTestProject1
 
             Assert.AreEqual("vhigh", c1.Maintenace_Price);
         }
+        public void numberDoorsTest()
+        {
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("2", c1.Number_Doors);
+        }
     }
 }
