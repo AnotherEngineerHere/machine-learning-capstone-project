@@ -1,3 +1,4 @@
+using CapstoneProject.model;
 using NUnit.Framework;
 
 namespace NUnitTestProject1
@@ -5,14 +6,16 @@ namespace NUnitTestProject1
     public class Tests
     {
         [SetUp]
-        public void Setup()
+        public void CarTest()
         {
         }
 
         [Test]
-        public void Test1()
+        public void soldPriceTest()
         {
-            Assert.Pass();
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("vhigh", c1.Sold_Price);
         }
     }
 }

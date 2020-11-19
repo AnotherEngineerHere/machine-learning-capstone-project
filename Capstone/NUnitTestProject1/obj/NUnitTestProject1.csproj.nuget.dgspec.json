@@ -4,6 +4,16 @@
     "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\NUnitTestProject1\\NUnitTestProject1.csproj": {}
   },
   "projects": {
+    "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\Capstone\\Capstone.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\Capstone\\Capstone.csproj",
+        "projectName": "Capstone",
+        "projectPath": "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\Capstone\\Capstone.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\NUnitTestProject1\\NUnitTestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +36,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\Capstone\\Capstone.csproj": {
+                "projectPath": "C:\\Users\\rojop\\OneDrive\\Escritorio\\machine-learning-capstone-project\\Capstone\\Capstone\\Capstone.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
