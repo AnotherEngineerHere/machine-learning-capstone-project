@@ -17,5 +17,13 @@ namespace NUnitTestProject1
 
             Assert.AreEqual("vhigh", c1.Sold_Price);
         }
+
+        [Test]
+        public void maintenacePriceTest()
+        {
+            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+
+            Assert.AreEqual("vhigh", c1.Maintenace_Price);
+        }
     }
 }
