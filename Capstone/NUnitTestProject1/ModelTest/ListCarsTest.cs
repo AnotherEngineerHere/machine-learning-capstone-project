@@ -31,7 +31,7 @@ namespace NUnitTestProject1
             lc.Add_Car("vhigh", "vhigh", "3", "2", "med", "med", "bad");
             lc.Add_Car("vhigh", "vhigh", "4", "2", "med", "med", "bad");
             lc.Add_Car("vhigh", "vhigh", "3", "2", "med", "med", "bad");
-            Assert.AreEqual(c1.CarF, lc.Get_Range_From_Values);
+            Assert.AreEqual(3, lc.Get_Range_From_Values(2,3,1).Count);
 
         }
 
