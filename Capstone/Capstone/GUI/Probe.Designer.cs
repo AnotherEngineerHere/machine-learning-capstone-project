@@ -39,6 +39,7 @@
             // dataProbe
             // 
             this.dataProbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataProbe.Cursor = System.Windows.Forms.Cursors.Cross;
             this.dataProbe.Location = new System.Drawing.Point(62, 46);
             this.dataProbe.Name = "dataProbe";
             this.dataProbe.Size = new System.Drawing.Size(654, 212);
@@ -47,6 +48,7 @@
             // textProbe
             // 
             this.textProbe.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textProbe.Cursor = System.Windows.Forms.Cursors.Cross;
             this.textProbe.ForeColor = System.Drawing.Color.Aquamarine;
             this.textProbe.Location = new System.Drawing.Point(75, 288);
             this.textProbe.Multiline = true;
