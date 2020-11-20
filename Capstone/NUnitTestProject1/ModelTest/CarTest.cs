@@ -13,7 +13,7 @@ namespace NUnitTestProject1
         [Test]
         public void soldPriceTest()
         {
-            Car c1 = new Car("vhigh", "vhigh", "5", "2", "med", "med", "bad");
+            Car c1 = new Car("vhigh", "vhigh", "5", "4", "med", "med", "bad");
 
             Assert.AreEqual("vhigh", c1.Sold_Price);
         }
