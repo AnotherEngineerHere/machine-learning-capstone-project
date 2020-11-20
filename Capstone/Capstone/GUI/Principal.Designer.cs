@@ -205,6 +205,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // textSearch
             // 
+            this.textSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textSearch.Location = new System.Drawing.Point(762, 164);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(206, 20);
