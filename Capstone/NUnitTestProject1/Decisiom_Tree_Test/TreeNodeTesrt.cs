@@ -3,10 +3,10 @@ using NUnit.Framework;
 
 namespace NUnitTestProject1
 {
-    public class Tests
+    public class NodeTest
     {
         [SetUp]
-        public void ListCarsTest()
+        public void TreeNodeTest()
         {
         }
 
