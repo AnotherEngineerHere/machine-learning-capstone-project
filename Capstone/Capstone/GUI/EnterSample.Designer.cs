@@ -159,6 +159,7 @@
             // textSample
             // 
             this.textSample.BackColor = System.Drawing.SystemColors.InfoText;
+            this.textSample.Cursor = System.Windows.Forms.Cursors.Cross;
             this.textSample.ForeColor = System.Drawing.Color.Lime;
             this.textSample.Location = new System.Drawing.Point(172, 61);
             this.textSample.Multiline = true;
