@@ -21,7 +21,7 @@ namespace NUnitTestProject1
         [Test]
         public void maintenacePriceTest()
         {
-            Car c1 = new Car("vhigh", "vhigh", "2", "3", "med", "med", "bad");
+            Car c1 = new Car("vhigh", "vhigh", "4", "3", "med", "med", "bad");
 
             Assert.AreEqual("vhigh", c1.Maintenace_Price);
         }
