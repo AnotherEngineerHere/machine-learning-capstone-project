@@ -51,7 +51,7 @@ namespace NUnitTestProject1
         }
         public void carFTest()
         {
-            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+            Car c1 = new Car("vhigh", "vhigh", "3", "4", "med", "med", "bad");
 
             Assert.AreEqual("bad", c1.CarF);
         }
