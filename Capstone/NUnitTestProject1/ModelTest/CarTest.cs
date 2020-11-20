@@ -39,13 +39,13 @@ namespace NUnitTestProject1
         }
         public void lugBootSizeTest()
         {
-            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+            Car c1 = new Car("vhigh", "vhigh", "5", "2", "med", "med", "bad");
 
             Assert.AreEqual("med", c1.Lug_Boot_Size);
         }
         public void safetyLevelTest()
         {
-            Car c1 = new Car("vhigh", "vhigh", "2", "2", "med", "med", "bad");
+            Car c1 = new Car("vhigh", "vhigh", "3", "4", "med", "med", "bad");
 
             Assert.AreEqual("med", c1.Safety_Level);
         }
