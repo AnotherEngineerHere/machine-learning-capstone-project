@@ -6,7 +6,7 @@ namespace NUnitTestProject1
     public class Tests
     {
         [SetUp]
-        public void CarTest()
+        public void ListCarsTest()
         {
         }
 
