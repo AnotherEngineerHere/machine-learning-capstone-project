@@ -10,12 +10,7 @@ namespace Capstone.Experiment
 {
     public class Experiment
     {
-        public const string TRAIN = @"../../Data/training.csv";
-
-        public const string PROBE = @"../../Data/probe.csv";
-
-        public const string COMPLE = @"../../Data/complete.csv";
-
+       
         private List<string> vhigh;
 
         private List<string> high;
@@ -36,15 +31,22 @@ namespace Capstone.Experiment
             tree = new Tree();
         }
 
-        public void ProbeManualTraining() 
+        public void CasesForManual()
         {
-            string[] lines = File.ReadAllLines(TRAIN);
+            
+        }
 
-            for (int i = 1; i < lines.Length; i++)
+        public void ProbeManualTraining(string buying, string maint) 
+        {
+            for (int i = 0; i < 1000; i++)
             {
-                string[] celdas = lines[i].Split(';');
 
-               
+                int doors = new Random().Next(1, 5);
+                int persons = new Random().Next(1, 5);
+                int lug_boot = new Random().Next(1, 5);
+                int safety = new Random().Next(1, 5);
+
+                ManualTree(buying,maint,RandDoors(doors),RandPer(persons),RandLug(lug_boot),RandSaf(safety));
 
             }
         }
@@ -66,29 +68,7 @@ namespace Capstone.Experiment
             Console.WriteLine(result);
         }
 
-        public string RandMaint(int value) 
-        {
-            string tr = "";
-
-            if(value == 1)
-            {
-                tr = "vhigh";
-            }
-            else if (value == 2)
-            {
-                tr = "high";
-            }
-            else if (value == 3)
-            {
-                tr = "med";
-            }
-            else
-            {
-                tr = "low";
-            }
-
-            return tr;
-        }
+        
 
         public string RandDoors(int value)
         {
