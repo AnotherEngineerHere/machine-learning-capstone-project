@@ -30,23 +30,19 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 [Video from Youtube](https://www.youtube.com/watch?v=y_zXjF8Y61U)
 
-[Engineering method(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Metodo%20de%20la%20Ingenieria.pdf)
+[Engineering method](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Metodo%20de%20la%20Ingenieria.pdf)
 
-[Funtional requirements(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Requerimientos.pdf)
+[Funtional requirements](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Requerimientos.pdf)
 
-[Class diagram(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Diagrama.png)
+[Class diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Diagrama.png)
 
-[Object diagram(No changes)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/ObjectDiagram.png)
+[Object diagram](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/ObjectDiagram.png)
 
-[Sequence diagram 1(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/SequenceDiagram1.png)
+[Sequence diagram 1](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/SequenceDiagram1.png)
 
-[Sequence diagram 2(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram2.png)
+[Sequence diagram 2](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram2.png)
 
-[Sequence diagram 3(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram3.png)
-
-[Sequence diagram 4(New)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram4.jpg)
-
-[Sequence diagram 5(New)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram5.jpg)
+[Sequence diagram 3](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram3.png)
 
 ## Notes
 Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 

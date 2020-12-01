@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="Decision_TreeNuget\TreeNuget.cs" />
     <Compile Include="Decision_Tree\Attribute.cs" />
+    <Compile Include="Experiment\Experiment.cs" />
     <Compile Include="GUI\CSVFileHandler.cs" />
     <Compile Include="Decision_Tree\Tree.cs" />
     <Compile Include="Decision_Tree\TreeNode.cs" />
