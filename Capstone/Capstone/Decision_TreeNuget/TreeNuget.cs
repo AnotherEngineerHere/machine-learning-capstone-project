@@ -72,11 +72,11 @@ namespace Capstone.Decision_TreeNuget
             };
 
             tree = id3learning.Learn(inputs, outputs);
-
+           
 
             string output = "";
             string tr = tree.ToRules().ToString();
-            tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", ";").Replace("(", "").Replace(")", "");
+            tr = tr.Replace(" =: ", ";").Replace(" && ", ";").Replace(" == ", ";").Replace("(","").Replace(")","");
             tr = tr.Replace("Buying", "BUYING").Replace("Maint", "MAINT").Replace("doors", "DOORS").Replace("persons", "PERSONS").Replace("Lug_boot", "LUG_BOOT").Replace("Safety", "SAFETY");
 
             string[] r = tr.Split("\n\r".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
@@ -95,7 +95,7 @@ namespace Capstone.Decision_TreeNuget
                 for (int j = 1; j < corrector.Length; j++)
                 {
                     output += corrector[j] + ";";
-
+                    
                 }
                 if (corrector[0].Equals("0"))
                 {
@@ -105,20 +105,20 @@ namespace Capstone.Decision_TreeNuget
                 {
                     output += "GOOD";
                 }
-
+                
                 o.Add(output);
                 output = "";
             }
 
-
+            
 
             var cs = new StringBuilder();
-            foreach (var item in MakeTree(o, ';'))
+            foreach (var item in MakeTree(o,';'))
             {
                 var newLine = string.Format("{0}", item);
                 cs.AppendLine(newLine);
             }
-            File.WriteAllText(NUGET, cs.ToString());
+            File.WriteAllText(NUGET, cs.ToString());    
 
         }
 
@@ -156,10 +156,10 @@ namespace Capstone.Decision_TreeNuget
                 }
 
             }
-
+            
         }
 
-        public string Example(string buying, string maint, string doors, string persons, string lug, string safety)
+        public string Example(string buying, string maint,string doors, string persons, string lug, string safety)
         {
             string outp = "";
             try
@@ -191,11 +191,11 @@ namespace Capstone.Decision_TreeNuget
                     outp += "\r\n";
                 }
             }
-            catch (Exception e)
+            catch(Exception e)
             {
                 outp += "Can't caluclate outcome. Na valid route through the tree was found";
             }
-
+            
 
             return outp;
         }
@@ -245,6 +245,6 @@ namespace Capstone.Decision_TreeNuget
             return arReturnNodes;
         }
 
-
+        
     }
 }
