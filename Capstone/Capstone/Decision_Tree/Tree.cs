@@ -50,38 +50,47 @@ namespace Capstone.Decision_Tree
 
         public string CalculateResult(TreeNode root, IDictionary<string, string> valuesForQuery, string result)
         {
-            var valueFound = false;
 
-            result += root.Name.ToUpper() + " -- ";
+            try 
+            {
+                var valueFound = false;
 
-            if (root.IsLeaf)
-            {
-                result = root.Edge.ToLower() + " --> " + root.Name.ToUpper();
-                valueFound = true;
-            }
-            else
-            {
-                foreach (var childNode in root.ChildNodes)
+                result += root.Name.ToUpper() + " -- ";
+
+                if (root.IsLeaf)
                 {
-                    foreach (var entry in valuesForQuery)
+                    result = root.Edge.ToLower() + " --> " + root.Name.ToUpper();
+                    valueFound = true;
+                }
+                else
+                {
+                    foreach (var childNode in root.ChildNodes)
                     {
-                        if (childNode.Edge.ToUpper().Equals(entry.Value.ToUpper()) && root.Name.ToUpper().Equals(entry.Key.ToUpper()))
+                        foreach (var entry in valuesForQuery)
                         {
-                            valuesForQuery.Remove(entry.Key);
+                            if (childNode.Edge.ToUpper().Equals(entry.Value.ToUpper()) && root.Name.ToUpper().Equals(entry.Key.ToUpper()))
+                            {
+                                valuesForQuery.Remove(entry.Key);
 
-                            return result + CalculateResult(childNode, valuesForQuery, $"{childNode.Edge.ToLower()} --> ");
+                                return result + CalculateResult(childNode, valuesForQuery, $"{childNode.Edge.ToLower()} --> ");
+                            }
                         }
                     }
                 }
-            }
 
-            // if the user entered an invalid attribute
-            if (!valueFound)
+                // if the user entered an invalid attribute
+                if (!valueFound)
+                {
+                    result = result.Remove(0, result.Length);
+                    result = "BAD";
+                }
+
+                
+            }
+            catch (KeyNotFoundException e)
             {
-                result = result.Remove(0,result.Length);
-                result = "BAD";
+                result = "Algo";
             }
-
             return result;
         }
 

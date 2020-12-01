@@ -193,9 +193,10 @@ namespace Capstone.Decision_TreeNuget
             }
             catch(Exception e)
             {
+                
                 outp += "BUYING--" + buying + "-->" + "MAINT--" + maint + "-->" + "DOORS--"
                         + doors + "-->" + "PERSONS--" + persons + "-->" + "LUG_BOOT--" + lug + "-->" + "SAFETY--" + safety + "-->" + "BAD";
-                outp += "\r\n"; ;
+                outp += "\r\n"; 
             }
             
 

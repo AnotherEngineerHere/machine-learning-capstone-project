@@ -1,167 +1,483 @@
-BUYING
+SAFETY
 	0
-		PERSONS
+		MAINT
 			0
-				BAD
-			1
-				SAFETY
+				LUG_BOOT
 					0
 						BAD
 					1
-						MAINT
+						DOORS
 							0
-								GOOD
+								BAD
+							1
+								PERSONS
+									0
+										BAD
+									1
+										BAD
+									2
+										BUYING
+											0
+												GOOD
+											1
+												BAD
+											2
+												GOOD
+							2
+								BAD
+							3
+								BUYING
+									0
+										GOOD
+									1
+										BAD
+									2
+										BAD
+									3
+										BAD
+					2
+						BAD
+			1
+				BUYING
+					0
+						BAD
+					1
+						LUG_BOOT
+							0
+								DOORS
+									0
+										BAD
+									1
+										GOOD
+									2
+										PERSONS
+											0
+												BAD
+											1
+												GOOD
+							1
+								PERSONS
+									0
+										BAD
+									1
+										GOOD
+									2
+										GOOD
+							2
+								BAD
+					2
+						PERSONS
+							0
+								BAD
+							1
+								LUG_BOOT
+									0
+										BAD
+									1
+										BAD
+									2
+										GOOD
+							2
+								BAD
+					3
+						BAD
+			2
+				LUG_BOOT
+					0
+						BUYING
+							0
+								BAD
 							1
 								DOORS
 									0
 										BAD
 									1
 										GOOD
+									2
+										GOOD
 									3
 										BAD
 							2
 								BAD
 							3
+								PERSONS
+									0
+										BAD
+									1
+										GOOD
+									2
+										DOORS
+											0
+												BAD
+											1
+												GOOD
+											2
+												GOOD
+					1
+						BUYING
+							0
+								BAD
+							1
+								PERSONS
+									0
+										BAD
+									1
+										GOOD
+									2
+										GOOD
+							2
+								BAD
+							3
 								GOOD
 					2
+						PERSONS
+							0
+								BAD
+							1
+								DOORS
+									0
+										BAD
+									1
+										BUYING
+											0
+												GOOD
+											1
+												BAD
+											3
+												BAD
+									2
+										BAD
+									3
+										BAD
+							2
+								BAD
+			3
+				BAD
+	1
+		LUG_BOOT
+			0
+				DOORS
+					0
+						BAD
+					1
+						PERSONS
+							0
+								MAINT
+									0
+										BAD
+									1
+										BUYING
+											1
+												BAD
+											2
+												BAD
+											3
+												GOOD
+									2
+										BAD
+									3
+										BAD
+							1
+								BAD
+							2
+								BAD
+					2
+						BAD
+					3
 						MAINT
 							0
-								LUG_BOOT
+								BUYING
 									0
-										GOOD
+										PERSONS
+											1
+												GOOD
+											2
+												BAD
 									1
 										BAD
 									2
-										GOOD
+										PERSONS
+											0
+												GOOD
+											2
+												BAD
+									3
+										BAD
 							1
 								BAD
 							2
 								BAD
 							3
-								LUG_BOOT
+								BAD
+			1
+				BAD
+			2
+				MAINT
+					0
+						DOORS
+							0
+								BUYING
 									0
-										GOOD
+										BAD
 									1
 										BAD
-			2
-				SAFETY
-					0
-						BAD
-					1
-						MAINT
+									2
+										BAD
+									3
+										GOOD
 							1
-								LUG_BOOT
+								BAD
+							2
+								BUYING
 									0
-										DOORS
+										PERSONS
 											0
+												BAD
+											1
 												BAD
 											2
 												GOOD
 									1
 										BAD
 									2
-										GOOD
-							2
-								BAD
+										PERSONS
+											1
+												GOOD
+											2
+												BAD
+									3
+										BAD
 							3
-								GOOD
-					2
-						MAINT
-							0
-								LUG_BOOT
-									0
-										GOOD
-									1
-										BAD
-									2
-										GOOD
-							1
 								BAD
-							2
-								BAD
-							3
-								LUG_BOOT
-									0
-										GOOD
-									1
-										BAD
-									2
-										GOOD
-	1
-		BAD
-	2
-		SAFETY
-			0
-				BAD
-			1
-				MAINT
-					0
-						PERSONS
-							0
-								BAD
-							1
-								LUG_BOOT
-									0
-										GOOD
-									1
-										BAD
-									2
-										GOOD
-							2
-								GOOD
 					1
 						BAD
 					2
-						BAD
+						PERSONS
+							0
+								BUYING
+									0
+										BAD
+									1
+										BAD
+									2
+										BAD
+									3
+										DOORS
+											0
+												GOOD
+											3
+												BAD
+							1
+								BAD
+							2
+								BAD
 					3
 						PERSONS
 							0
-								BAD
-							1
-								LUG_BOOT
+								BUYING
 									0
-										GOOD
-									1
 										BAD
 									2
-										GOOD
-							2
-								LUG_BOOT
-									0
 										DOORS
-											0
-												BAD
 											1
 												GOOD
-									1
+											2
+												BAD
+											3
+												GOOD
+									3
 										BAD
-									2
-										GOOD
-			2
-				MAINT
+							1
+								BAD
+							2
+								BAD
+	2
+		BUYING
+			0
+				LUG_BOOT
 					0
-						PERSONS
+						MAINT
 							0
 								BAD
 							1
 								DOORS
 									0
 										BAD
-									3
-										GOOD
-							2
-								LUG_BOOT
-									0
-										BAD
 									1
-										BAD
+										PERSONS
+											0
+												BAD
+											1
+												GOOD
 									2
-										GOOD
+										BAD
+									3
+										PERSONS
+											0
+												GOOD
+											2
+												BAD
+							2
+								BAD
+							3
+								BAD
 					1
 						BAD
 					2
 						BAD
+			1
+				PERSONS
+					0
+						BAD
+					1
+						MAINT
+							0
+								BAD
+							1
+								GOOD
+							2
+								GOOD
+							3
+								LUG_BOOT
+									0
+										DOORS
+											1
+												GOOD
+											3
+												BAD
+									1
+										GOOD
+									2
+										BAD
+					2
+						MAINT
+							0
+								BAD
+							1
+								DOORS
+									0
+										LUG_BOOT
+											0
+												GOOD
+											2
+												BAD
+									1
+										GOOD
+									2
+										GOOD
+									3
+										GOOD
+							2
+								DOORS
+									0
+										LUG_BOOT
+											1
+												GOOD
+											2
+												BAD
+									1
+										GOOD
+									2
+										GOOD
+									3
+										GOOD
+							3
+								LUG_BOOT
+									0
+										GOOD
+									1
+										GOOD
+									2
+										BAD
+			2
+				DOORS
+					0
+						BAD
+					1
+						BAD
+					2
+						PERSONS
+							0
+								BAD
+							1
+								MAINT
+									0
+										LUG_BOOT
+											0
+												BAD
+											1
+												GOOD
+											2
+												BAD
+									1
+										BAD
+									2
+										LUG_BOOT
+											0
+												GOOD
+											1
+												BAD
+									3
+										BAD
+							2
+								BAD
+					3
+						MAINT
+							0
+								BAD
+							1
+								BAD
+							2
+								BAD
+							3
+								LUG_BOOT
+									0
+										BAD
+									1
+										GOOD
+									2
+										BAD
+			3
+				MAINT
+					0
+						BAD
+					1
+						LUG_BOOT
+							0
+								PERSONS
+									0
+										BAD
+									1
+										DOORS
+											2
+												GOOD
+											3
+												BAD
+									2
+										DOORS
+											0
+												BAD
+											2
+												GOOD
+											3
+												GOOD
+							1
+								PERSONS
+									0
+										BAD
+									1
+										GOOD
+									2
+										GOOD
+							2
+								BAD
+					2
+						PERSONS
+							0
+								BAD
+							1
+								GOOD
+							2
+								GOOD
 					3
 						BAD
-	3
-		BAD
