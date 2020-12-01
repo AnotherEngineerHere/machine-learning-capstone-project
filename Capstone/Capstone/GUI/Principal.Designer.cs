@@ -48,6 +48,7 @@ namespace DesicionTree_CapstoneProject
             this.textSearch = new System.Windows.Forms.TextBox();
             this.butGraf = new System.Windows.Forms.Button();
             this.butTree = new System.Windows.Forms.Button();
+            this.butExp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataCar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,6 +230,17 @@ namespace DesicionTree_CapstoneProject
             this.butTree.Visible = false;
             this.butTree.Click += new System.EventHandler(this.butTree_Click);
             // 
+            // butExp
+            // 
+            this.butExp.Location = new System.Drawing.Point(484, 480);
+            this.butExp.Name = "butExp";
+            this.butExp.Size = new System.Drawing.Size(103, 34);
+            this.butExp.TabIndex = 17;
+            this.butExp.Text = "Experiment";
+            this.butExp.UseVisualStyleBackColor = true;
+            this.butExp.Visible = false;
+            this.butExp.Click += new System.EventHandler(this.butExp_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,6 +249,7 @@ namespace DesicionTree_CapstoneProject
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1061, 542);
+            this.Controls.Add(this.butExp);
             this.Controls.Add(this.butTree);
             this.Controls.Add(this.butGraf);
             this.Controls.Add(this.textSearch);
@@ -285,6 +298,7 @@ namespace DesicionTree_CapstoneProject
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.Button butGraf;
         private System.Windows.Forms.Button butTree;
+        private System.Windows.Forms.Button butExp;
     }
 }
 

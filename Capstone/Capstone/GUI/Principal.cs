@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Capstone.GUI;
 using CapstoneProject.model;
 using Capstone.Decision_TreeNuget;
+using Capstone.Experiment;
 
 
 namespace DesicionTree_CapstoneProject
@@ -30,6 +31,9 @@ namespace DesicionTree_CapstoneProject
 
         string[] _categories = { "Buying", "Maintenance","Doors","Persons","Lug_Boot","Safety" };
 
+        private Experiment exp;
+
+
         public Principal()
         {
             InitializeComponent();
@@ -41,7 +45,7 @@ namespace DesicionTree_CapstoneProject
                 CategoriesCB.Items.Add(_categories[i]);
             }
 
-            
+         
         }
 
         public void Load_Data() 
@@ -92,6 +96,7 @@ namespace DesicionTree_CapstoneProject
             CategoriesCB.Visible = true;
             butGraf.Visible = true;
             butTree.Visible = true;
+            butExp.Visible = true;
          
         }
 
@@ -310,6 +315,9 @@ namespace DesicionTree_CapstoneProject
             
         }
 
-     
+        private void butExp_Click(object sender, EventArgs e)
+        {
+            exp = new Experiment();
+        }
     }
 }

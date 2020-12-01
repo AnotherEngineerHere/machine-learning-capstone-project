@@ -78,7 +78,8 @@ namespace Capstone.Decision_Tree
             // if the user entered an invalid attribute
             if (!valueFound)
             {
-                result = "Attribute not found";
+                result = result.Remove(0,result.Length);
+                result = "BAD";
             }
 
             return result;

@@ -193,7 +193,9 @@ namespace Capstone.Decision_TreeNuget
             }
             catch(Exception e)
             {
-                outp += "Can't caluclate outcome. Na valid route through the tree was found";
+                outp += "BUYING--" + buying + "-->" + "MAINT--" + maint + "-->" + "DOORS--"
+                        + doors + "-->" + "PERSONS--" + persons + "-->" + "LUG_BOOT--" + lug + "-->" + "SAFETY--" + safety + "-->" + "BAD";
+                outp += "\r\n"; ;
             }
             
 
