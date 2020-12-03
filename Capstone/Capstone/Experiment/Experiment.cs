@@ -46,6 +46,8 @@ namespace Capstone.Experiment
 
         private List<string> s;
 
+        private List<int> results;
+
         public Experiment() 
         {
           
@@ -56,18 +58,10 @@ namespace Capstone.Experiment
             tnSample1 = new TreeNuget(SAM1);
             tnSample2 = new TreeNuget(SAM2);
             tnTrain = new TreeNuget(TRAIN);
-            /**
             
-            tnComplete = new TreeNuget(COMP);
-            
-           
-            
-            
-            CreateTreeManualTrain();
-            CreateTreeManualComp();
-            **/
             csv = new CSVFileHandler();
             s = new List<string>();
+            results = new List<int>();
 
             CreateTreeManualSample1();
             CreateTreeManualSample2();
@@ -75,6 +69,11 @@ namespace Capstone.Experiment
 
             RunCases();
            
+        }
+
+        public List<int> GetAssertions() 
+        {
+            return results;
         }
 
         public void RunCases() 
@@ -146,6 +145,7 @@ namespace Capstone.Experiment
             }
 
             s.Add("Set:Sample1" + "," + "SoldPrice:"+ buying + "," + "SameOutput:"+ assertions);
+            results.Add(assertions);
 
         }
 
@@ -191,6 +191,7 @@ namespace Capstone.Experiment
             }
 
             s.Add("Set:Sample2" + "," + "SoldPrice:" + buying + "," + "SameOutput:" + assertions);
+            results.Add(assertions);
 
         }
 
@@ -236,6 +237,7 @@ namespace Capstone.Experiment
             }
 
             s.Add("Set:Training" + "," + "SoldPrice:" + buying + "," + "SameOutput:" + assertions);
+            results.Add(assertions);
 
         }
 
