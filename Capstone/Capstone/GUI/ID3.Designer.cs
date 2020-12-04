@@ -54,6 +54,7 @@
             // 
             // butProbe
             // 
+            this.butProbe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butProbe.Location = new System.Drawing.Point(38, 390);
             this.butProbe.Name = "butProbe";
             this.butProbe.Size = new System.Drawing.Size(106, 32);
@@ -65,6 +66,7 @@
             // 
             // butRegister
             // 
+            this.butRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butRegister.Location = new System.Drawing.Point(262, 390);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(127, 32);
@@ -137,6 +139,7 @@
             // 
             // butAccord
             // 
+            this.butAccord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butAccord.Location = new System.Drawing.Point(150, 390);
             this.butAccord.Name = "butAccord";
             this.butAccord.Size = new System.Drawing.Size(106, 32);
