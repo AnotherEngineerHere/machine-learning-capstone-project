@@ -97,6 +97,12 @@
     <Compile Include="GUI\EnterSample.Designer.cs">
       <DependentUpon>EnterSample.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ExGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ExGraph.Designer.cs">
+      <DependentUpon>ExGraph.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Graphics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\EnterSample.resx">
       <DependentUpon>EnterSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExGraph.resx">
+      <DependentUpon>ExGraph.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>

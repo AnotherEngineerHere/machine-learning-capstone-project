@@ -33,6 +33,8 @@ namespace DesicionTree_CapstoneProject
 
         private Experiment exp;
 
+        private ExGraph exGraph;
+
         public Principal()
         {
             InitializeComponent();
@@ -316,7 +318,8 @@ namespace DesicionTree_CapstoneProject
 
         private void butExp_Click(object sender, EventArgs e)
         {
-            exp = new Experiment();
+            exGraph = new ExGraph();
+            exGraph.Show();
 
         }
     }

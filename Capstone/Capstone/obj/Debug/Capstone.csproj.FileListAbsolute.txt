@@ -24,3 +24,30 @@ C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Ca
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CopyComplete
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.exe
 C:\Users\Camilo\Documents\C#\Capstone Final\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.pdb
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.dll.config
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Capstone.exe.config
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Capstone.exe
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Capstone.pdb
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.dll
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.MachineLearning.dll
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.Core.dll
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.dll
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Statistics.dll
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.xml
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.MachineLearning.xml
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.xml
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Math.Core.xml
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\bin\Debug\Accord.Statistics.xml
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.EnterSample.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.ExGraph.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Graphics.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.ID3.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\DesicionTree_CapstoneProject.Principal.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.GUI.Probe.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.Properties.Resources.resources
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.csproj.CopyComplete
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.exe
+C:\Users\rojop\OneDrive\Escritorio\machine-learning-capstone-project\Capstone\Capstone\obj\Debug\Capstone.pdb
