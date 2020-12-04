@@ -18,12 +18,12 @@ namespace Capstone.GUI
         {
             expe = new Experiment.Experiment();
             InitializeComponent();
-            sample1();
+            Sample1();
             
         }
 
-        public void sample1() {
-            clear();
+        public void Sample1() {
+            Clear();
             Graph.Series[0].Points.AddXY("vHig", expe.GetAssertions()[0]);
             Graph.Series[0].Points.AddXY("high", expe.GetAssertions()[1]);
             Graph.Series[0].Points.AddXY("med", expe.GetAssertions()[2]);
@@ -31,39 +31,39 @@ namespace Capstone.GUI
             
         }
 
-        public void sample2() {
-            clear();
+        public void Sample2() {
+            Clear();
             Graph.Series[0].Points.AddXY("vHig", expe.GetAssertions()[4]);
             Graph.Series[0].Points.AddXY("high", expe.GetAssertions()[5]);
             Graph.Series[0].Points.AddXY("med", expe.GetAssertions()[6]);
             Graph.Series[0].Points.AddXY("low", expe.GetAssertions()[7]);
         }
 
-        public void training() {
-            clear();
+        public void Training() {
+            Clear();
             Graph.Series[0].Points.AddXY("vHig", expe.GetAssertions()[8]);
             Graph.Series[0].Points.AddXY("high", expe.GetAssertions()[9]);
             Graph.Series[0].Points.AddXY("med", expe.GetAssertions()[10]);
             Graph.Series[0].Points.AddXY("low", expe.GetAssertions()[11]);
         }
 
-        public void clear() {
+        public void Clear() {
             Graph.Series[0].Points.Clear();
         }
 
         private void s1_Click(object sender, EventArgs e)
         {
-            sample1();
+            Sample1();
         }
 
         private void s2_Click(object sender, EventArgs e)
         {
-            sample2();
+            Sample2();
         }
 
         private void treaning_Click(object sender, EventArgs e)
         {
-            training();
+            Training();
         }
     }
 }
