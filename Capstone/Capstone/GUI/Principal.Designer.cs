@@ -73,6 +73,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // butLoad
             // 
+            this.butLoad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butLoad.Location = new System.Drawing.Point(48, 480);
             this.butLoad.Name = "butLoad";
             this.butLoad.Size = new System.Drawing.Size(103, 34);
@@ -95,6 +96,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // CategoriesCB
             // 
+            this.CategoriesCB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CategoriesCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriesCB.FormattingEnabled = true;
             this.CategoriesCB.Location = new System.Drawing.Point(762, 87);
@@ -140,6 +142,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // butAcceptar
             // 
+            this.butAcceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butAcceptar.Location = new System.Drawing.Point(762, 211);
             this.butAcceptar.Name = "butAcceptar";
             this.butAcceptar.Size = new System.Drawing.Size(86, 26);
@@ -151,6 +154,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // butAll
             // 
+            this.butAll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butAll.Location = new System.Drawing.Point(157, 480);
             this.butAll.Name = "butAll";
             this.butAll.Size = new System.Drawing.Size(103, 34);
@@ -202,6 +206,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // textSearch
             // 
+            this.textSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textSearch.Location = new System.Drawing.Point(762, 164);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(206, 20);
@@ -210,6 +215,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // butGraf
             // 
+            this.butGraf.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butGraf.Location = new System.Drawing.Point(266, 480);
             this.butGraf.Name = "butGraf";
             this.butGraf.Size = new System.Drawing.Size(103, 34);
@@ -221,6 +227,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // butTree
             // 
+            this.butTree.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butTree.Location = new System.Drawing.Point(375, 480);
             this.butTree.Name = "butTree";
             this.butTree.Size = new System.Drawing.Size(103, 34);
@@ -232,6 +239,7 @@ namespace DesicionTree_CapstoneProject
             // 
             // butExp
             // 
+            this.butExp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butExp.Location = new System.Drawing.Point(484, 480);
             this.butExp.Name = "butExp";
             this.butExp.Size = new System.Drawing.Size(103, 34);

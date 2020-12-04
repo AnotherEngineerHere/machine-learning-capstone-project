@@ -98,6 +98,7 @@
             // 
             this.radID3.AutoSize = true;
             this.radID3.BackColor = System.Drawing.Color.Transparent;
+            this.radID3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radID3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radID3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radID3.Location = new System.Drawing.Point(767, 112);
@@ -112,6 +113,7 @@
             // 
             this.radID3N.AutoSize = true;
             this.radID3N.BackColor = System.Drawing.Color.Transparent;
+            this.radID3N.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radID3N.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radID3N.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radID3N.Location = new System.Drawing.Point(767, 142);
@@ -124,6 +126,7 @@
             // 
             // butShow
             // 
+            this.butShow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butShow.Location = new System.Drawing.Point(761, 172);
             this.butShow.Name = "butShow";
             this.butShow.Size = new System.Drawing.Size(106, 32);
