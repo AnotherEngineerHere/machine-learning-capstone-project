@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Graph = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.s1 = new System.Windows.Forms.Button();
             this.s2 = new System.Windows.Forms.Button();
@@ -40,23 +40,23 @@
             // 
             // Graph
             // 
-            chartArea5.Name = "ChartArea1";
-            this.Graph.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.Graph.Legends.Add(legend5);
+            chartArea6.Name = "ChartArea1";
+            this.Graph.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.Graph.Legends.Add(legend6);
             this.Graph.Location = new System.Drawing.Point(12, 12);
             this.Graph.Name = "Graph";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.Graph.Series.Add(series5);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.Graph.Series.Add(series6);
             this.Graph.Size = new System.Drawing.Size(604, 404);
             this.Graph.TabIndex = 0;
             this.Graph.Text = "chart1";
             // 
             // s1
             // 
-            this.s1.BackColor = System.Drawing.Color.Cyan;
+            this.s1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.s1.Location = new System.Drawing.Point(682, 63);
             this.s1.Name = "s1";
             this.s1.Size = new System.Drawing.Size(75, 23);
@@ -67,7 +67,7 @@
             // 
             // s2
             // 
-            this.s2.BackColor = System.Drawing.Color.Cyan;
+            this.s2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.s2.Location = new System.Drawing.Point(682, 109);
             this.s2.Name = "s2";
             this.s2.Size = new System.Drawing.Size(75, 23);
@@ -78,7 +78,7 @@
             // 
             // treaning
             // 
-            this.treaning.BackColor = System.Drawing.Color.Cyan;
+            this.treaning.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.treaning.Location = new System.Drawing.Point(682, 151);
             this.treaning.Name = "treaning";
             this.treaning.Size = new System.Drawing.Size(75, 23);
