@@ -51,9 +51,14 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 ## Notes
 Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 
 
-## Team Roles
+## Team Roles, ANOVA and Experiment
 
 [Roles](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Roles.pdf)
+
+[Experiment Data](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Capstone/Data/exp.csv)
+
+[ANOVA](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/ANOVA.xlsx)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
