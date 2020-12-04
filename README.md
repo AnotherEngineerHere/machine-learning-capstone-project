@@ -48,6 +48,8 @@ http://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 
 [Sequence diagram 5(Updated)](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Sequence_Diagram5.jpg)
 
+[Experiment design](https://github.com/AnotherEngineerHere/machine-learning-capstone-project/blob/master/Capstone/Documentation/Dise%C3%B1o%20de%20Experimento.pdf)
+
 ## Notes
 Most of the commits has been pushed to diferents branchs, so please check the others branchs to see them 
 
